@@ -15,3 +15,16 @@ console.log(balance.toString().length);
 
 // CONVERT NUMBER INTO DECIMAL UPTO 2 PLACE (2 is defined inside the toFixed() function)
 console.log(balance.toFixed(2));
+
+const otherNumber = 23.55654;
+const otherNumber1 = 123.55654;
+const otherNumber2 = 1123.55654;
+
+// toPrecision is used for getting a precise value and it returns it in a form of a string and takes a number from 1-21.
+console.log(otherNumber.toPrecision(3));
+console.log(otherNumber1.toPrecision(3));
+console.log(otherNumber2.toPrecision(3));
+
+console.log(otherNumber.toPrecision(4));
+console.log(otherNumber1.toPrecision(4));
+console.log(otherNumber2.toPrecision(4));
