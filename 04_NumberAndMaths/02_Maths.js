@@ -14,3 +14,7 @@ console.log("This is the aboslute function value for the number 4.8: " + Math.fl
 // IF WE WANT TO FIND THE SQUARE ROOT OF ANY NUMBER USING THE MATH LIBRARY OF JAVASCRIPT WE CAN DO THE FOLLOWING
 console.log("This is the square root of number 25 : " + Math.sqrt(25));
 console.log("This is the square root of number 25 : " + Math.sqrt(64));
+
+// IF WE WANT TO FIND THE MINIMUM VALUE IN THE ARRAY WE CAN USE .min() FUNCTION AND SAME FOR MAXIMUM
+console.log("This is the minimum value out of 4,6,10,2 : " + Math.min(4,6,10,2));
+console.log("This is the maximum value out of 4,6,10,2 : " + Math.max(4,6,10,2));
