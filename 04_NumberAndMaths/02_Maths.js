@@ -18,3 +18,15 @@ console.log("This is the square root of number 25 : " + Math.sqrt(64));
 // IF WE WANT TO FIND THE MINIMUM VALUE IN THE ARRAY WE CAN USE .min() FUNCTION AND SAME FOR MAXIMUM
 console.log("This is the minimum value out of 4,6,10,2 : " + Math.min(4,6,10,2));
 console.log("This is the maximum value out of 4,6,10,2 : " + Math.max(4,6,10,2));
+
+// RANDOM NUMBER GENERATOR
+console.log(Math.random());
+console.log((Math.random()*10)+1);
+console.log((Math.floor(Math.random()*10))+1);
+// console.log("This is random number generator : " + Math.random());
+
+const min = 10;
+const max = 20;
+
+// FORMULA FOR RANDOM NUMBER GEREATOR BETWEEN 2 NUMBERS.
+console.log(Math.floor(Math.random() * (max-min + 1)) + min);
