@@ -28,3 +28,8 @@ console.log(otherNumber2.toPrecision(3));
 console.log(otherNumber.toPrecision(4));
 console.log(otherNumber1.toPrecision(4));
 console.log(otherNumber2.toPrecision(4));
+
+const hundreds = 1000000;
+// CONVERTING NUMBER INTO A STING OF NUMBER WHICH IS IN US STANDERED
+console.log(hundreds.toLocaleString());
+console.log(hundreds.toLocaleString('en-IN')); // THIS IS DOING THE SAME THING JUST ONE DIFFRENCE IS THAT IT IS DOING IT IN INDIA STANDARDS
