@@ -33,6 +33,10 @@ console.log(Date.now()/1000); // OUTPUT : 1695957290.574
 console.log(Math.floor(Date.now()/1000)); // OUTPUT : 1695957290
 
 let newDate = new Date();
-console.log(newDate);
-console.log(newDate.getMonth());
-console.log(newDate.getDay());
+console.log(newDate); // OUTPUT : 2023-09-29T13:56:15.204Z
+console.log(newDate.getMonth()); // OUTPUT : 8
+console.log(newDate.getDay()); // OUTPUT : 5
+
+newDate.toLocaleString('default', {
+    weekday : "long"
+});
