@@ -31,3 +31,8 @@ console.log(myCreatedDate.getTime()); // OUTPUT : 1674412200000
 console.log(Date.now()); // OUTPUT : 1695957290574
 console.log(Date.now()/1000); // OUTPUT : 1695957290.574
 console.log(Math.floor(Date.now()/1000)); // OUTPUT : 1695957290
+
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getMonth());
+console.log(newDate.getDay());
