@@ -44,9 +44,13 @@ console.log(typeof newArr);
 
 console.log("A ", myArr);
 
-const myn1 = myArr.slice(1,3);
+const myn1 = myArr.slice(1,3); // SLICE DOESNOT MANIPULATE THE ORIGINAL ARRAY
 
 console.log(myn1);
 console.log("B ", myArr);
+
+const myn2 = myArr.splice(1,3); // SPLICE MANIPULATE THE ORIGINAL ARRAY
+console.log(myn2);
+console.log("C ", myArr);
 
 
