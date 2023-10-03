@@ -12,3 +12,19 @@ const dcHeros = ["Superman", "Flash", "Batman"];
 // {USING SPREAD OPERATOR FOR ABOVE CAONCATINATING TASK}
 const allNewHeros = [...marvelHeros, ...dcHeros]; // DOES THE SAME WORK AS CONCAT.
 console.log(allNewHeros);
+
+const anotherArray = [1,2,3,[4,5,6],7,[6,7,[4,5]]];
+
+const usableAnotherArray = anotherArray.flat(Infinity);
+console.log(usableAnotherArray);
+
+console.log(Array.isArray("Ashish"));
+console.log(Array.from("Ashish"));
+console.log(Array.from(1234567890));
+console.log(Array.from({name : "Ashish"}));
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3));
