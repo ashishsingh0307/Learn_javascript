@@ -26,5 +26,6 @@ console.log(Array.from({name : "Ashish"}));
 let score1 = 100;
 let score2 = 200;
 let score3 = 300;
+let score4 = [400, 500, 600];
 
-console.log(Array.of(score1, score2, score3));
+console.log(Array.of(score1, score2, score3, ...score4)); // MAKES AN ARRAY FROM ELEMENTS
