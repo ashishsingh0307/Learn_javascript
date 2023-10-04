@@ -45,8 +45,9 @@ jsUser.greeting = function(){
 
 jsUser.greetingTwo= function(){
     console.log(`Hello ${jsUser["name"]}`); // USING BACKTICKS IS CALLED INTERPOLATION.
-    console.log(`Hello ${this["Full Name"]}`);
     console.log(`Hello ${this["name"]}`);
+    console.log(`Hello ${this["Full Name"]}`);
+    //all above console logs are doing the same thing except for the last one its printing full name value instead
 }
 
 console.log(jsUser.greeting);
