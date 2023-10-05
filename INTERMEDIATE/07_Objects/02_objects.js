@@ -38,5 +38,8 @@ const object4 = { ...object1, ...object2 };
 const object5 = Object.assign(object1, object2); // THIS MEANS THAT OBJECT2 IS MERGING INTO OBJECT1
 const object6 = Object.assign({}, object1, object2); // THIS MEANS THAT OBJECT1 AND OBJECT2 IS COMBINED AND MAKE A NEW OBJECT
 // console.log(object3);
+console.log("This is normal : ",object3);
 console.log("This is spread operator: ",object4);
 console.log("This is assign function: ",object5);
+console.log("This is assign function with target object be blank : ",object6);
+//above line's output is same as the console log on the line 43.
