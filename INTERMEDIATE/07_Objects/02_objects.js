@@ -48,4 +48,7 @@ const object6 = Object.assign({}, object1, object2); // THIS MEANS THAT OBJECT1 
 console.log("This is tinder user object: ", tinderUser);
 
 console.log("These are the keys for Tinderuser object : ", Object.keys(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
-console.log("These are the VAlues for Tinderuser object : ", Object.values(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
+console.log("These are the Values for Tinderuser object : ", Object.values(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
+console.log("These are the Entries for Tinderuser object : ", Object.entries(tinderUser)); // ALL THE KEYS AND VALUE RETURN IN A MULTIDIMENTIONAL ARRAY.
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
