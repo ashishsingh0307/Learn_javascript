@@ -52,3 +52,4 @@ console.log("These are the Values for Tinderuser object : ", Object.values(tinde
 console.log("These are the Entries for Tinderuser object : ", Object.entries(tinderUser)); // ALL THE KEYS AND VALUE RETURN IN A MULTIDIMENTIONAL ARRAY.
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
+console.log(tinderUser.hasOwnProperty('isLogged')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
