@@ -46,3 +46,6 @@ const object6 = Object.assign({}, object1, object2); // THIS MEANS THAT OBJECT1 
 
 
 console.log("This is tinder user object: ", tinderUser);
+
+console.log("These are the keys for Tinderuser object : ", Object.keys(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
+console.log("These are the VAlues for Tinderuser object : ", Object.values(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
