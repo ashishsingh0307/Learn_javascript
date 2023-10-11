@@ -27,7 +27,7 @@ addTwoNumbers(3, "a"); // OUTPUT WILL BE 3a.
 
 const result = addTwoNumbers(4, 7);
 
-console.log("result : ", result);
+console.log("result : ", result); // IT IS BECAUSE OUR FUNCTION IS NOT RETURNING ANYTHING TO BE STORED.
 
 
 
