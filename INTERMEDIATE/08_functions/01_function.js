@@ -31,10 +31,22 @@ console.log("result : ", result); // IT IS BECAUSE OUR FUNCTION IS NOT RETURNING
 
 
 function sum(number1, number2){
-    let answer = number1 + number2;
+    let answer = number1 + number2; // THIS ANSWER VARIABLE'S SCOPE IS LIMITED TO THE FUNCTION'S SCOPE
     return answer;
     console.log("Ashish"); // AFTER A RETURN STATEMENT NOTHING IS GOING TO EXECUTE IN A FUNCTION. RETURN KEYWORD IS KIND OF A WAY TO TELL A FUNCTION TO STOP ITS PROCESS.
 }
 
-const result1 = sum(3, 5);
-console.log("result1 : ", result1);
+const answer = sum(3, 5); // THIS ANSWER VRIABLE IS OUTSIDE OF THE sum() FUNCTION.
+console.log("result1 : ", answer);
+
+
+function loginUserMessage(username){
+    return `${username} Just Logged In`;
+}
+
+const notification1 = loginUserMessage("Ashish"); // OUTPUT : Ashish Just Logged In
+const notification2 = loginUserMessage(""); // OUTPUT :  Just Logged In
+const notification3 = loginUserMessage(); // OUTPUT : undefined Just Logged In
+console.log(notification1);
+console.log(notification2);
+console.log(notification3);
