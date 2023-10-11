@@ -30,4 +30,11 @@ const result = addTwoNumbers(4, 7);
 console.log("result : ", result); // IT IS BECAUSE OUR FUNCTION IS NOT RETURNING ANYTHING TO BE STORED.
 
 
+function sum(number1, number2){
+    let answer = number1 + number2;
+    return answer;
+    console.log("Ashish"); // AFTER A RETURN STATEMENT NOTHING IS GOING TO EXECUTE IN A FUNCTION. RETURN KEYWORD IS KIND OF A WAY TO TELL A FUNCTION TO STOP ITS PROCESS.
+}
 
+const result1 = sum(3, 5);
+console.log("result1 : ", result1);
