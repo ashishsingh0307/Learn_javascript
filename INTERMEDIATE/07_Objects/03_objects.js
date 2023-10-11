@@ -5,7 +5,7 @@ const course = {
     courseName : "JS in Hindi",
     CoursePrice : "999",
     courseInstructure : "Hitesh"
-}
+} // THIS IS OBJECT
 
 // console.log(course.courseName);
 // console.log(course.CoursePrice);
@@ -23,4 +23,10 @@ console.log(instructure);
 console.log(price);
 console.log(name);
 
-// 5:22 (video)
+// API
+
+// {
+//     "name" : "Ashish",
+//     "coursename" : "Chai and Javascript",
+//     "price" : "Free"
+// } // THIS IS NOT AN OBJECT THIS IS JSON CODE FORMAT. THOUGH OBJECT AND JSON LOOKS SIMILAR BUT THEY ARE DIFFERENT
