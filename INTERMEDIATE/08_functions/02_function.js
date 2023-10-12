@@ -29,3 +29,11 @@ handleObject({
     username : "Ashish",
     age : 25
 })
+
+const myNewArray = [200, 400, 100, 150];
+
+function returnSecondValue(getarray){
+    return getarray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
