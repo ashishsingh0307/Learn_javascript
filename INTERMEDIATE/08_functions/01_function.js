@@ -51,3 +51,12 @@ console.log(notification1);
 console.log(notification2);
 console.log(notification3);
 
+function loginUserMessage1(username){
+    if(username === undefined){   // CAN ALSO WRITE if(!username){......}, ITS SAME AS WHAT WE DID IN THIS LINE.
+        console.log("please enter a username.");
+        return;
+    }
+    return `${username} Just Logged In`;
+}
+
+console.log(loginUserMessage1());
