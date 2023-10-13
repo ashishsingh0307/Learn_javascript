@@ -31,16 +31,16 @@ if(true){
 // console.log(username); // CAN NOT ACCESS AS ITS IN THE BLOCK SCOPE OF THE IF ELSE STATEMENT ABOVE
 
 
-function addone(num){
+console.log(addone(5));
+function addone(num){ // FUNCTION DECLARATION NORMAL WAY
     return num + 1;
 }
 
-addone(5);
 
-const addtwo = function(num){
+console.log(addtwo(3));
+const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES
     return num + 2;
 }
 
-addtwo(3);
 
 // video 22 13:42
