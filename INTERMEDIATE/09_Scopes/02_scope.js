@@ -32,5 +32,15 @@ if(true){
 
 
 function addone(num){
-
+    return num + 1;
 }
+
+addone(5);
+
+const addtwo = function(num){
+    return num + 2;
+}
+
+addtwo(3);
+
+// video 22 13:42
