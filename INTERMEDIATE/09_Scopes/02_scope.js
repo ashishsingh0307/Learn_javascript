@@ -17,3 +17,20 @@ function one(){
 }
 
 one();
+
+if(true){
+    const username = "ajay";
+
+    if(username === "ajay"){
+        const website = " youtube";
+        console.log(username + website);
+    }
+
+    // console.log(website); // CAN NOT ACCESS AS ITS IN THE BLOCK SCOPE WHERE USERNAME IS CHECKED
+}
+// console.log(username); // CAN NOT ACCESS AS ITS IN THE BLOCK SCOPE OF THE IF ELSE STATEMENT ABOVE
+
+
+function addone(num){
+
+}
