@@ -18,3 +18,13 @@ console.log(accountId);
 */
 
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
+
+let a = 3;
+console.log(a);
+
+const b = 4;
+console.log(b);
+
+console.log(c);
+var c = 5;
+console.log(c); // IN CASE OF VAR HOISTING IS SUPPORTED BUT IN CASE OF LET AND CONST HOISTING IS NOT SUPPORTED.

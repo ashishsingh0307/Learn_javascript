@@ -32,13 +32,13 @@ if(true){
 
 
 console.log(addone(5));
-function addone(num){ // FUNCTION DECLARATION NORMAL WAY
+function addone(num){ // FUNCTION DECLARATION NORMAL WAY || WHEN DECLARED THIS WAY HOISTING IS SUPPORTED
     return num + 1;
 }
 
 
 console.log(addtwo(3));
-const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES
+const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES || WHEN DECLARED THIS WAY HOISTING IS NOT SUPPORTED BECAUSE WE CAN ONLY USE VAR KEYWORD FOR HOISTING. CONST AND LET DOES NOT SUPPORT HOISTING.
     return num + 2;
 }
 
