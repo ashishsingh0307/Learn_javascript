@@ -36,8 +36,12 @@ const user = {
 
 // chai();
 
-const addTwo = (num1, num2) => {
-    return num1 + num2;
-}
+// BASIC/NORMAL ARROW FUNCTION
+// const addTwo = (num1, num2) => {
+//     return num1 + num2;
+// }
+
+// IMPLICIT RETURN
+const addTwo = (num1, num2) => num1 + num2; // THIS RETURN THE VALUE WITHOUT ANY RETURN KEYWORD IN IT. IT IS A SINGLE LINE ARROW FUNCTION.
 
 console.log(addTwo(4,6));
