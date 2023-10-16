@@ -1,2 +1,17 @@
 // IMMEDIATLY INVOKED FUNCTION EXPRESSION (IIFE)
 
+(function chai(){
+    console.log("DB Connected ONE");
+}) (); // THIS IS IIFE SYNTAX || MANY TIMES GLOBAL SCOPE POLLUTION HAPPENS THEN WE USE IIFE SO THAT WE CAN REMOVE THAT GLOBAL SCOPE POLLUTION.
+
+(function chai2(){
+    console.log("DB CONNECTED TWO");
+}) (); // THIS CAUSES ERROR BECAUSE WHEN EVER WE USE IIFE WE HAVE TO END THAT INVOKED FUNCTION WITH A SEMI COLON (;).
+
+(() => {
+    console.log("DB CONNECTED THREE");
+}) ();
+
+((name) => {
+    console.log(`DB CONNECTED BY ${name}`);
+}) ("ASHISH");
