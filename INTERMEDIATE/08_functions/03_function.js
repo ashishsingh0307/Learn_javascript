@@ -29,9 +29,15 @@ const user = {
 // }
 
 // ARROW FUNCTION
-const chai = () => { // JUST FUNCTION KEYWORD IS REMOVED FORM THE ABOVE FUNCTION DECLARATION.
-    let username = "Ashish";
-    console.log(this.username); // STILL GIVING UNDEFINED.
+// const chai = () => { // JUST FUNCTION KEYWORD IS REMOVED FORM THE ABOVE FUNCTION DECLARATION.
+//     let username = "Ashish";
+//     console.log(this.username); // STILL GIVING UNDEFINED. BECAUSE THIS KEYWORD ONLY WORKS WITH OBJECTS.
+// }
+
+// chai();
+
+const addTwo = (num1, num2) => {
+    return num1 + num2;
 }
 
-chai();
+console.log(addTwo(4,6));
