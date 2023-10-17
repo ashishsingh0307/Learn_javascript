@@ -35,6 +35,6 @@
 
             -> Call Stack works as LIFO (Last In First Out)
             -> Call stack is nothing but Block where Function stacking over each other and working on top of the global execution context.
-            ->
+            -> Everything happens same as we discussed in memory allocation phase and execution phase.
 
 */
