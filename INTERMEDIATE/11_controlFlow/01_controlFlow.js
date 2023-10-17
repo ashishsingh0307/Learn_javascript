@@ -22,4 +22,26 @@ const balance = 1000;
 
 // console.log(power);
 
-if(balance > 500) console.log("test"); // NOW HERE THE SCOPE IS IMPLICIT. || THIS IS NOT HOW WE WRITE CODE
+// if(balance > 500) console.log("test"); // NOW HERE THE SCOPE IS IMPLICIT. || THIS IS NOT HOW WE WRITE CODE
+
+// if(balance < 500){
+//     console.log("less than 500");
+// }else if(balance < 750){
+//     console.log("less than 750");
+// }else if(balance < 900){
+//     console.log("less than 900");
+// }else{
+//     console.log("less than 1200");
+// }
+
+const debitCard = true;
+const loggedInFromGoogle = false;
+const loggedInFromEmail = true;
+
+if(isUserLoggedIn && debitCard && 2==2){
+    console.log("Allow to buy Course");
+}
+
+if(loggedInFromEmail || loggedInFromGoogle){
+    console.log("User Logged In");
+}
