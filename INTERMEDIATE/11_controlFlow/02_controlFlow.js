@@ -37,7 +37,7 @@
 
 // TRUTHY VALUES AND FALSEY VALUES
 
-const userEmail = "a@gmail.com";
+const userEmail = ""; // IF THIS HAS THE STRING VALUE THEN ONLY IT IS CONSIDERED TRUE APART FROM THAT IT WILL BE CONSIDERED FALSE.
 
 if(userEmail){
     console.log("got user email");
