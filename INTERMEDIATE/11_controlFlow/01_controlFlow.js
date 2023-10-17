@@ -1,6 +1,7 @@
 const isUserLoggedIn = true;
 const temprature = 41;
 const score = 200;
+const balance = 1000;
 
 // if(temprature < 50){
 //     console.log("less than 50"); // THIS LINE WILL BE EXECUTED IF THE CONDITION IS TRUE
@@ -14,9 +15,11 @@ const score = 200;
 // }
 
 
-if(score > 100){
-    const power = "fly"; // IF WE USE VAR KEYWORD INSTEAD OF LET AND CONST KEYWORDS. THEN ON LINE 22 IT WILL PRINT "User Power : fly" IN THE CONSOLE. WHICH IS NOT CORRECT IF THAT IS INSIDE THE SCOPE OF THE CURLY BRACKETS.
-    console.log(`User Power : ${power}`);
-}
+// if(score > 100){
+//     const power = "fly"; // IF WE USE VAR KEYWORD INSTEAD OF LET AND CONST KEYWORDS. THEN ON LINE 22 IT WILL PRINT "User Power : fly" IN THE CONSOLE. WHICH IS NOT CORRECT IF THAT IS INSIDE THE SCOPE OF THE CURLY BRACKETS.
+//     console.log(`User Power : ${power}`);
+// }
 
 // console.log(power);
+
+if(balance > 500) console.log("test"); // NOW HERE THE SCOPE IS IMPLICIT. || THIS IS NOT HOW WE WRITE CODE
