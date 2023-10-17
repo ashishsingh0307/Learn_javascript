@@ -20,7 +20,7 @@ switch (month) {
 
     case 2:
         console.log("February");
-        break;
+        break; // IF WE DONT USE BREAK AT THIS POINT THEN IT WILL PRINT EVERYTHING BELOW THIS EXCEPT DEFAULT STATEMENT. BREAK IS USED TO BREAK THE FLOW OF THE PROGRAM.
 
     case 3:
         console.log("March");
