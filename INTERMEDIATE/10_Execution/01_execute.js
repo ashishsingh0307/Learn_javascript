@@ -31,4 +31,10 @@
                 --> Whatever function call happens that is executed as "new variable Environment" {explained in memory creation phase}
 
 
+        => CALL STACK
+
+            -> Call Stack works as LIFO (Last In First Out)
+            -> Call stack is nothing but Block where Function stacking over each other and working on top of the global execution context.
+            ->
+
 */
