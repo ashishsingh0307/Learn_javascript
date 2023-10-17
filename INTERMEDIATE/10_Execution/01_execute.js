@@ -25,7 +25,10 @@
                     ---> first assigning variable a initial space and value i.e. undefined.
                     ---> then execution happen according to the function block.
                     ---> when this return any value it goes into the GEC and that value is stored there.
-                    ---> After that
+                    ---> After that "New Varibale Environment" Block is deleted.
             -> Execution Phase.
+                --> What ever values we have for those variable that overwrites the initial undefined value.
+                --> Whatever function call happens that is executed as "new variable Environment" {explained in memory creation phase}
+
 
 */
