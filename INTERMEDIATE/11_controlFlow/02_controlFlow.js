@@ -39,11 +39,11 @@
 
 const userEmail = ""; // IF THIS HAS THE STRING VALUE THEN ONLY IT IS CONSIDERED TRUE APART FROM THAT IT WILL BE CONSIDERED FALSE.
 
-if(userEmail){
-    console.log("got user email");
-}else{
-    console.log("Dont have user emails");
-}
+// if(userEmail){
+//     console.log("got user email");
+// }else{
+//     console.log("Dont have user emails");
+// }
 
 
 /*
@@ -68,6 +68,15 @@ if(userEmail){
     function(){}
 */
 
-// VIDEO 26 37:04
+if(userEmail.length === 0){
+    console.log("Array is empty");
+}
 
+const emptyobjects = {}
+if(Object.keys(emptyobjects).length === 0){
+    console.log("Object is Empty");
+}
+
+
+// NULLISH COALESCING OPERATOR (??)
 
