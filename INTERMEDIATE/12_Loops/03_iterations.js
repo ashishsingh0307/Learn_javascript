@@ -34,3 +34,5 @@ for (const greet of greetings) {
 
 //     }
 // }
+
+// video number 29 07:00
