@@ -24,6 +24,8 @@ for (const greet of greetings) {
 
 // MAPS IN JS
 
+
+
 // FOR IN LOOP
 
 // for (const key in object) {
