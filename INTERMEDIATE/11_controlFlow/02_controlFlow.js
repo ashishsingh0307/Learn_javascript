@@ -78,5 +78,17 @@ if(Object.keys(emptyobjects).length === 0){
 }
 
 
-// NULLISH COALESCING OPERATOR (??)
+// NULLISH COALESCING OPERATOR (??) || NULL AND UNDEFINED
+// this is used to have a safety check if we have a null value then we have this operator to check if value is null or undefined then do something else.
 
+let val1 = 5 ?? 10;
+console.log(val1); // Output : 5
+
+let val2 = null ?? 10;
+console.log(val2); // Output : 10
+
+let val3 = undefined ?? 15;
+console.log(val3);
+
+let val4 = null ?? undefined ?? 10 ?? 20;
+console.log(val4);
