@@ -17,3 +17,17 @@ while (arr < myArray.length) {
 
 // DO WHILE LOOP
 
+let score = 1;
+
+do {
+    // console.log(`Score is ${score}`);
+    score++;
+} while (score <= 10);
+
+
+let score1 = 11;
+
+do {
+    console.log(`Score is ${score}`);
+    score1++;
+} while (score1 <= 10);
