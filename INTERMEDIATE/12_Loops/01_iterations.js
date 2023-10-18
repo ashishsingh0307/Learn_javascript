@@ -18,9 +18,17 @@ for (let i = 0; i <= 10; i++) {
     // console.log(element);
 }
 
-for (let i = 0; i < 10; i++) {
-    console.log(`Outer Loop Value : ${i}`);
-    for (let j = 0; j < 10; j++) {
-        console.log(`Inner Loop Value : ${j}`);
+for (let i = 0; i < 3; i++) {
+    // console.log(`Outer Loop Value : ${i}`);
+    for (let j = 0; j < 3; j++) {
+        // console.log(`Inner Loop Value : ${j} and outer loop : ${i}`);
     }
+}
+
+for (let i = 1; i <= 10; i++) {
+    console.log(`Table for ${i}`);
+    for (let j = 1; j <= 10; j++) {
+        console.log(`${i} * ${j} = ${i*j}`);
+    }
+
 }
