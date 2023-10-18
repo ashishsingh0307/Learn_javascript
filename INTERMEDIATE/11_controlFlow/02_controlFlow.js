@@ -78,7 +78,7 @@ if(Object.keys(emptyobjects).length === 0){
 }
 
 
-// NULLISH COALESCING OPERATOR (??) || NULL AND UNDEFINED
+// NULLISH/NULL COALESCING OPERATOR (??) || NULL AND UNDEFINED
 // this is used to have a safety check if we have a null value then we have this operator to check if value is null or undefined then do something else.
 
 let val1 = 5 ?? 10;
@@ -92,3 +92,12 @@ console.log(val3);
 
 let val4 = null ?? undefined ?? 10 ?? 20;
 console.log(val4);
+
+
+// TERNIARY OPERATOR
+// short form for if else statements
+
+// SYNTAX :: // condition ? true : false ;
+const iceTeaPrice = 100;
+
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
