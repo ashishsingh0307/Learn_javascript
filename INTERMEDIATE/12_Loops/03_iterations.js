@@ -143,6 +143,25 @@ function printMe(item){
 // WE CAN PASS MORE PARAMETERS IN FOREACH LOOP
 // ONE IS ITEM (item/element {names can be anything}) || SECOND IS INDEX(index/key {names can be anything}) || THRID IS ARRAY LIST(arr/arrList {names can be anything})
 
-coding.forEach((one, two, three)=>{
-    console.log(one, two, three);
-})
+// coding.forEach((one, two, three)=>{
+//     console.log(one, two, three);
+// })
+
+const myCoding = [
+    {
+        languageName : "Javascript",
+        languageFileName : "js"
+    },
+    {
+        languageName : "Java",
+        languageFileName : "java"
+    },
+    {
+        languageName : "Python",
+        languageFileName : "py"
+    }
+]
+
+myCoding.forEach((item)=>{
+    console.log(item.languageName);
+});
