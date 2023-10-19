@@ -105,3 +105,15 @@ for (const key in programming) {
 // for (const [key, value] in map) {
 //     console.log(key, "-" ,value);
 // } // FOR IN LOOP DOESNOT WORK ON MAPS
+
+/*
+
+    ==> WHENEVER WE WANT TO ITERATE OVER OBJECTS WE NEED TO USE FOR IN LOOP
+    ==> WHENEVER WE WANT TO ITERATE OVER ARRAYS WE CAN USE BOTH FOR IN AND FOR OF LOOP
+    ==> WHENEVER WE WANT TO ITERATE OVER MAPS WE HAVE TO USE FOR OF LOOP
+
+*/
+
+
+//================================== FOREACH LOOP =======================================
+
