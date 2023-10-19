@@ -128,6 +128,14 @@ const coding = ['js', 'ruby', 'java', 'python', 'cpp'];
 //     console.log(item);
 // });
 
-coding.forEach((items)=>{
-    console.log(items);
-});
+// coding.forEach((items)=>{
+//     console.log(items);
+// });
+
+// IF WE HAVE A FUNCTION TO PRINT VALUES WE CAN USE THAT TO IN THE FOREACH LOOP
+
+function printMe(item){
+    console.log(item);
+}
+
+coding.forEach(printMe); // WE NEED TO GIVE THIS FUNCTION'S REFERENCE NOT HAVE TO EXECUTE THE FUNCTION.
