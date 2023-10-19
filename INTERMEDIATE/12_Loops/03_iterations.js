@@ -24,23 +24,23 @@ for (const greet of greetings) {
 
 // MAPS IN JS (MAP IN ITSELF IS AN OBJECT IN JS) || MAPS IS USED FOR ITS UNIQUE VALUES STORAGE
 
-const map = new Map();
-map.set('IN', "India");
-map.set('USA', "United States of America");
-map.set('FR', "France");
-map.set('IND', "INDIA");
+// const map = new Map();
+// map.set('IN', "India");
+// map.set('USA', "United States of America");
+// map.set('FR', "France");
+// map.set('IND', "INDIA");
 
 // console.log(map);
 
-for (const key of map) {
+// for (const key of map) {
     // console.log(key); // OUTPUT WILL BE 4 DIFFERENT ARRAYS WITH KEY VALUE AS AN ELEMENT IN AN ARRAY. BUT WE DONT NEED THAT IN THAT FORMAT WE NEED TO PRINT IN A DIFFERENT WAY.
-}
+// }
 
 // BEST WAY TO PRINT MAPS VALUE IS TO DESTRUCTURE THE ARRAY.
 
-for (const [key, value] of map) {
+// for (const [key, value] of map) {
     // console.log(key,":-",value);
-}
+// }
 
 // ITERATING OVER AN OBJECT USING FOR OF LOOP
 
@@ -93,5 +93,15 @@ const programming = ["js", "py", "rb", "cpp", "java"];
 
 for (const key in programming) {
     // console.log(key); // ITS PRINTING THE INDEXES OF THE ARRAY
-    console.log(programming[key]);
+    // console.log(programming[key]);
 }
+
+// const map = new Map();
+// map.set('IN', "India");
+// map.set('USA', "United States of America");
+// map.set('FR', "France");
+// map.set('IND', "INDIA");
+
+// for (const [key, value] in map) {
+//     console.log(key, "-" ,value);
+// } // FOR IN LOOP DOESNOT WORK ON MAPS
