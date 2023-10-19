@@ -117,3 +117,11 @@ for (const key in programming) {
 
 //================================== FOREACH LOOP =======================================
 
+// const coding = ['js', 'ruby', 'java', 'python', 'cpp'];
+
+// coding.forEach(element => {
+
+// });
+
+
+// VIDEO 29 23:00
