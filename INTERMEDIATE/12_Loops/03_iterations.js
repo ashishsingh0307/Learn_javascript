@@ -121,10 +121,13 @@ const coding = ['js', 'ruby', 'java', 'python', 'cpp'];
 
 // coding.foreach( function name(){} ) || IN CALLBACK FUNCTION WE DO NOT GIVE ANY NAME OF THE FUNCTION.
 // coding.foreach( function (item){} ) || NOW GIVE A PARAMETER WHICH CAN CALL ARRAY'S ELEMENTS , THIS FUNCTION IS SMART ENOUGH TO KNOW THAT THIS PARAMETER IS CALLING ALL THE ARRAY ELEMENTS.
+// NOW THAT WE HAVE LEARNED ABOUT ARROW FUNCTION WE CAN IMPLEMENT ARROW FUNCTION ALSO.
+// coding.foreach( (item/element) => {}) || NOW WE USED A ARROW FUNCTION WITH A PARAMETER THAT IS HOW WE USE FOREACH LOOP
 
-coding.forEach( function (item) {
-    console.log(item);
+// coding.forEach( function (item) {
+//     console.log(item);
+// });
+
+coding.forEach((items)=>{
+    console.log(items);
 });
-
-
-// VIDEO 29 23:00
