@@ -1,4 +1,4 @@
-// FOR OF LOOP
+//============================== FOR OF LOOP =================================================
 
 // ["", "", ""] // NORMAL ARRAY ELEMENTS
 // [{}, {}, {}] // OBJECTS AS ELEMENTS IN ARRAY
@@ -56,11 +56,11 @@ for (const [key, value] of map) {
 //     game3 : "GTA"
 // }
 
-for (const [key, value] of games) {
+// for (const [key, value] of games) {
     // console.log(key,":-",value); // OBJECTS ARE NOT IERATABLE USING FOR OF LOOP
-}
+// }
 
-// FOR IN LOOP
+//================================ FOR IN LOOP ======================================
 
 // for (const key in object) {
 //     if (Object.hasOwnProperty.call(object, key)) {
@@ -69,4 +69,17 @@ for (const [key, value] of games) {
 //     }
 // }
 
-// video number 29 07:00
+const languages = {
+    js : 'javascript',
+    cpp : 'c++',
+    rb : 'Ruby on Rails',
+    swift : 'Swift by Apple'
+} // WHENEVER WE WANT TO ITERATE OVER AN OBJECT WE WILL USE FOR IN LOOP
+
+for (const key in languages) {
+    console.log(key);
+}
+
+for (const [key, value] in languages) {
+    console.log(key, ":", value);
+}
