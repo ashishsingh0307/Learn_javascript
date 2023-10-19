@@ -45,9 +45,13 @@ for (const [key, value] of map) {
 // ITERATING OVER AN OBJECT USING FOR OF LOOP
 
 const games = {
-    game1 : "NFS",
-    game2 : "Assasins Creed",
-    game3 : "GTA"
+    'game1' : "NFS",
+    'game2' : "Assasins Creed",
+    'game3' : "GTA"
+}
+
+for (const [key, value] of games) {
+    console.log(key,":-",value);
 }
 
 // FOR IN LOOP
