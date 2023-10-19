@@ -117,11 +117,14 @@ for (const key in programming) {
 
 //================================== FOREACH LOOP =======================================
 
-// const coding = ['js', 'ruby', 'java', 'python', 'cpp'];
+const coding = ['js', 'ruby', 'java', 'python', 'cpp'];
 
-// coding.forEach(element => {
+// coding.foreach( function name(){} ) || IN CALLBACK FUNCTION WE DO NOT GIVE ANY NAME OF THE FUNCTION.
+// coding.foreach( function (item){} ) || NOW GIVE A PARAMETER WHICH CAN CALL ARRAY'S ELEMENTS , THIS FUNCTION IS SMART ENOUGH TO KNOW THAT THIS PARAMETER IS CALLING ALL THE ARRAY ELEMENTS.
 
-// });
+coding.forEach( function (item) {
+    console.log(item);
+});
 
 
 // VIDEO 29 23:00
