@@ -138,4 +138,11 @@ function printMe(item){
     console.log(item);
 }
 
-coding.forEach(printMe); // WE NEED TO GIVE THIS FUNCTION'S REFERENCE NOT HAVE TO EXECUTE THE FUNCTION.
+// coding.forEach(printMe); // WE NEED TO GIVE THIS FUNCTION'S REFERENCE NOT HAVE TO EXECUTE THE FUNCTION.
+
+// WE CAN PASS MORE PARAMETERS IN FOREACH LOOP
+// ONE IS ITEM (item/element {names can be anything}) || SECOND IS INDEX(index/key {names can be anything}) || THRID IS ARRAY LIST(arr/arrList {names can be anything})
+
+coding.forEach((one, two, three)=>{
+    console.log(one, two, three);
+})
