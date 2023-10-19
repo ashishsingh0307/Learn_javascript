@@ -69,12 +69,12 @@ for (const [key, value] of map) {
 //     }
 // }
 
-const languages = {
-    js : 'javascript',
-    cpp : 'c++',
-    rb : 'Ruby on Rails',
-    swift : 'Swift by Apple'
-} // WHENEVER WE WANT TO ITERATE OVER AN OBJECT WE WILL USE FOR IN LOOP
+// const languages = {
+//     js : 'javascript',
+//     cpp : 'c++',
+//     rb : 'Ruby on Rails',
+//     swift : 'Swift by Apple'
+// } // WHENEVER WE WANT TO ITERATE OVER AN OBJECT WE WILL USE FOR IN LOOP
 
 // for (const key in languages) {
 //     console.log(key);
@@ -84,6 +84,14 @@ const languages = {
 //     console.log(key, ":", value);
 // }
 
-for (const key in languages) {
-    console.log(key, ":" ,languages[key]);
+// for (const key in languages) {
+//     // console.log(key, ":" ,languages[key]);
+//     console.log(`${key} shortcut for ${languages[key]}`);
+// }
+
+const programming = ["js", "py", "rb", "cpp", "java"];
+
+for (const key in programming) {
+    // console.log(key); // ITS PRINTING THE INDEXES OF THE ARRAY
+    console.log(programming[key]);
 }
