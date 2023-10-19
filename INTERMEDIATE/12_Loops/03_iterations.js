@@ -19,12 +19,36 @@ for (const greet of greetings) {
     if(greet == " "){
         continue;
     }
-    console.log(`Each char is ${greet}`);
+    // console.log(`Each char is ${greet}`);
 }
 
-// MAPS IN JS
+// MAPS IN JS (MAP IN ITSELF IS AN OBJECT IN JS) || MAPS IS USED FOR ITS UNIQUE VALUES STORAGE
 
+const map = new Map();
+map.set('IN', "India");
+map.set('USA', "United States of America");
+map.set('FR', "France");
+map.set('IND', "INDIA");
 
+console.log(map);
+
+for (const key of map) {
+    console.log(key); // OUTPUT WILL BE 4 DIFFERENT ARRAYS WITH KEY VALUE AS AN ELEMENT IN AN ARRAY. BUT WE DONT NEED THAT IN THAT FORMAT WE NEED TO PRINT IN A DIFFERENT WAY.
+}
+
+// BEST WAY TO PRINT MAPS VALUE IS TO DESTRUCTURE THE ARRAY.
+
+for (const [key, value] of map) {
+    console.log(key,":-",value);
+}
+
+// ITERATING OVER AN OBJECT USING FOR OF LOOP
+
+const games = {
+    game1 : "NFS",
+    game2 : "Assasins Creed",
+    game3 : "GTA"
+}
 
 // FOR IN LOOP
 
