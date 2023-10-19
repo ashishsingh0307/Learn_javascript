@@ -76,10 +76,14 @@ const languages = {
     swift : 'Swift by Apple'
 } // WHENEVER WE WANT TO ITERATE OVER AN OBJECT WE WILL USE FOR IN LOOP
 
-for (const key in languages) {
-    console.log(key);
-}
+// for (const key in languages) {
+//     console.log(key);
+// }
 
-for (const [key, value] in languages) {
-    console.log(key, ":", value);
+// for (const [key, value] in languages) {
+//     console.log(key, ":", value);
+// }
+
+for (const key in languages) {
+    console.log(key, ":" ,languages[key]);
 }
