@@ -43,6 +43,16 @@ const books = [
 
 const userBooks = books.filter((bk) => bk.genre === 'History');
 
-console.log(userBooks);
+const userBooks1 = books.filter((bk)=> {
+    return bk.publish >= 2000
+});
+
+const userBooks2 = books.filter((bk)=> {
+    return bk.publish >= 1995 && bk.genre === 'History'
+});
+
+// console.log(userBooks);
+// console.log(userBooks1);
+console.log(userBooks2);
 
 // Video 30 10:30
