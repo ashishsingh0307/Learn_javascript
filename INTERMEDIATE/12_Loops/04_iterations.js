@@ -9,4 +9,6 @@
 
 const myNums = [1,2,3,4,5,6,7,8,9,10];
 
-myNums.filter();
+// FILTER FUNCTION IS ALSO SIMILAR TO FOREACH LOOP WHICH REQUIRES A CALLBACK FUNCTION.
+const newNums = myNums.filter((num)=> num > 4); // FILTER ONLY WORK WHEN WE ASSIGN IT TO A VARIABLE.
+console.log(newNums);
