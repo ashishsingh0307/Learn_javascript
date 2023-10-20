@@ -25,3 +25,5 @@ myNums.forEach((num)=>{
 console.log(`This is using filter function : ${newNums}`);
 console.log('This is using filter function :', newNums1);
 console.log(`This is using Foreach Loop : ${newNums2}`);
+
+// Video 30 10:30
