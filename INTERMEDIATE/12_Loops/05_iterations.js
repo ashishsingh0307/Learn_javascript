@@ -9,7 +9,3 @@ const newNums = myNumbers
                     .filter((num) => num >= 40) // THIS IS A FILTER FUNCTION THAT USED IN CHAIN || FILTER RETURN ONLY TRUE AND FALSE
 
 console.log(newNums);
-
-
-
-// video 30 19:23
