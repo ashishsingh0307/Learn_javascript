@@ -33,8 +33,11 @@ VIDEO 4 - INTRO TO VARIABLES
 
             -> LET - let accountId || let is a keyword
                 --> In scope now if we declare any variable using the 'let' keyword then it will not be used oustside the scope.
+                    We dont use 'var' keyword anymore.
+                    Because of issue in block scope and functional scope.
             -> CONST - const accountId || const is a keyword
-                -->
+                --> 'const' keyword is a keyword which is if declared and assinged.
+                    cannot be reassigned.
 
           INTRO TO COMMENTS
             1.) PUT // IN FRONT OF A LINE OR STARTING OF A LINE THEN THAT LINE WILL BE COMMENTED OUT
