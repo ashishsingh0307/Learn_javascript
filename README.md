@@ -1,4 +1,5 @@
-VIDEO 1 - INTRODUCTION TO WHAT THE COURSE IS ABOUT
+VIDEO 1 - INTRODUCTION TO WHAT THE COURSE IS ABOUT =====================================================================================
+
 VIDEO 2 - HOW TO SETUP THE ENVIRONMENT,
           DIFFERENCE BETWEEN COMPILER AND INTERPRETER,
           HISTORY OF JS(earlier written in browser and now written in the ide),
@@ -6,7 +7,8 @@ VIDEO 2 - HOW TO SETUP THE ENVIRONMENT,
           INSTALLATION OF NODE JS {using LTS(Long Term Support) version},
           USING IDE (Visual Studio Code) (Jetbranins Fleet also good editor),
           EXECUTION OF JS CODE => "node filename.js".
-VIDEO 3 - INTRO TO GIT AND GITHUB,
+
+VIDEO 3 - INTRO TO GIT AND GITHUB ======================================================================================================
           CREATING OF GITHUB PROFILE
             -> CREATING NEW REPOSITORY
             -> CREATING CODESPACE FOR THAT REPOSITORY
@@ -23,8 +25,7 @@ VIDEO 3 - INTRO TO GIT AND GITHUB,
             -> USING GIT (STAGING, COMMITING, PUSHING).
             -> DELETE THE CODESPACE AFTER FINISHING WORK ON IT (because we get only limited Hours from github codespaces).
 
-VIDEO 4 - INTRO TO VARIABLES
-
+VIDEO 4 - INTRO TO VARIABLES ===========================================================================================================
             -> VAR - var accountId || var is a keyword
                 --> In Scope if we declare variable using 'var' keyword.
                     It can be used outside the scope also.
@@ -45,6 +46,40 @@ VIDEO 4 - INTRO TO VARIABLES
 
           INTRO TO console.table()
             -> Syntax : console.table([variableName1, variableName2, variableName3, ...]) => This provides printed values in a Tabular Form
+
+VIDEO 5 - INTRO TO DATATYPES =============================================================================================================
+
+          -> "use strict" KEYWORD IS USED TO TREAT JS CODE AS NEWER VERSION.
+
+          -> alert() => THIS IS A FUNCTION WHICH SHOW POP UP MESSAGE ON BROWSER WINDOW. || THIS ONLY WORKS IN BROWSER NOT IN NODEJS ENVIRONMENT.
+          -> prompt() => THIS IS A FUNCTION WHICH TAKES INPUT BY SHOWING POPUP ON BROWSER WINDOW || THIS ALSO ONLY WORKS IN BROWSERS NOT IN NODEJS ENV.
+          -> console.log() => THIS IS A FUNCTION WHICH PRINTS THE VALUE IN TERMINAL OR CONSOLE.
+
+          ***CODE READABILITY SHOULD BE UTMOST PRIORITY***
+          ***OFFICIAL JS DOCUMENTATION (https://tc39.es/ecma262/#sec-intro)***
+          ***OR WE CAN USE MDN (mdn is not official documentation though)***
+
+          => DATATYPES
+
+            PRIMITIVE DATATYPES
+
+                ==> STRING
+                ==> NUMBERS
+                ==> BIGINT
+                ==> BOOLEAN
+                ==> NULL // standalone value || type is object
+                ==> UNDEFINED // type is undefined
+                ==> SYMBOL
+
+            NON PRIMITIVE DATATYPES
+
+                ==> OBJECTS
+                ==> ARRAY
+
+          -> 'typeof' is a keyword which is used to check the type of the value whether it is string, number, boolean etc.
+
+
+
 
 
 
