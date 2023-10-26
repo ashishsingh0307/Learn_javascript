@@ -78,6 +78,8 @@ VIDEO 5 - INTRO TO DATATYPES ===================================================
 
           -> 'typeof' is a keyword which is used to check the type of the value whether it is string, number, boolean etc.
 
+VIDEO 6 -
+
 
 
 
