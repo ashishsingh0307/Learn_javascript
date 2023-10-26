@@ -78,8 +78,18 @@ VIDEO 5 - INTRO TO DATATYPES ===================================================
 
           -> 'typeof' is a keyword which is used to check the type of the value whether it is string, number, boolean etc.
 
-VIDEO 6 -
+VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ===========================================================================================
+          ->  INSTANCE 1 => let score = "33";
+                            let valueInNumber = Number(score);
+                            console.log(typeof valueInNumber); // OUTPUT : number
+                            console.log(valueInNumber); // OUTPUT : 33
+              INSTANCE 2 => let score = "33abc";
+                            let valueInNumber = Number(score);
+                            console.log(typeof valueInNumber); // OUTPUT : number
+                            console.log(valueInNumber); // OUTPUT : NaN (not a number)
 
+          -> Above Examples are showing that 33 is a string which is converted into a number and there is no problem converting it to number.
+             But in 2nd Example we have 33abc as a string which got converted into a number but have NaN as a value.
 
 
 
