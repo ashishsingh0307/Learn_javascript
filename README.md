@@ -1,2 +1,5 @@
-# Learn_javascript
-This contains Basics to Advanced JavaScript concepts.
+VIDEO 1 - INTRODUCTION TO WHAT THE COURSE IS ABOUT
+VIDEO 2 - HOW TO SETUP THE ENVIRONMENT, DIFFERENCE BETWEEN COMPILER AND INTERPRETER, HISTORY OF JS(earlier written in browser and now written in the ide),
+
+
+1.)
