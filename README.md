@@ -26,9 +26,13 @@ VIDEO 3 - INTRO TO GIT AND GITHUB,
 VIDEO 4 - INTRO TO VARIABLES
 
             -> VAR - var accountId || var is a keyword
-                --> In Scope
+                --> In Scope if we declare variable using 'var' keyword.
+                    It can be used outside the scope also.
+                    Which is not a correct thing to do.
+                    so to tackle this problem 'let' is introduced in ES6
+
             -> LET - let accountId || let is a keyword
-                -->
+                --> In scope now if we declare any variable using the 'let' keyword then it will not be used oustside the scope.
             -> CONST - const accountId || const is a keyword
                 -->
 
@@ -37,7 +41,8 @@ VIDEO 4 - INTRO TO VARIABLES
             2.) /* _ _ _ */ THIS IS A MULTILINE COMMENT WHICH CAN CONTAINER MULTIPLE LINES
 
           INTRO TO console.table()
-            -> Syntax : console.table([variableName1, variableName2, variableName3, ...])
+            -> Syntax : console.table([variableName1, variableName2, variableName3, ...]) => This provides printed values in a Tabular Form
+
 
 
 
