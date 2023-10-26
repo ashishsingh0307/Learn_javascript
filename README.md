@@ -23,5 +23,17 @@ VIDEO 3 - INTRO TO GIT AND GITHUB,
             -> USING GIT (STAGING, COMMITING, PUSHING).
             -> DELETE THE CODESPACE AFTER FINISHING WORK ON IT (because we get only limited Hours from github codespaces).
 
+VIDEO 4 - INTRO TO VARIABLES
+
+            -> VAR - var accountId || var is a keyword
+                -->
+            -> LET - let accountId || let is a keyword
+                -->
+            -> CONST - const accountId || const is a keyword
+                -->
+
+          INTRO TO COMMENTS
+            1.) PUT // IN FRONT OF A LINE OR STARTING OF A LINE THEN THAT LINE WILL BE COMMENTED OUT
+            2.) /* _ _ _ */ THIS IS A MULTILINE COMMENT WHICH CAN CONTAINER MULTIPLE LINES
 
 1.)
