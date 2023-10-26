@@ -19,6 +19,9 @@ VIDEO 3 - INTRO TO GIT AND GITHUB,
                 --> Select the default version.
                 --> Click on OK.
                 --> Machine will be Rebuild now.
+            -> MAKING A NEW FILE AND EXECUTING THAT FILE.
+            -> USING GIT (STAGING, COMMITING, PUSHING).
+            -> DELETE THE CODESPACE AFTER FINISHING WORK ON IT (because we get only limited Hours from github codespaces).
 
 
 1.)
