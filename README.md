@@ -6,7 +6,19 @@ VIDEO 2 - HOW TO SETUP THE ENVIRONMENT,
           INSTALLATION OF NODE JS {using LTS(Long Term Support) version},
           USING IDE (Visual Studio Code) (Jetbranins Fleet also good editor),
           EXECUTION OF JS CODE => "node filename.js".
-
+VIDEO 3 - INTRO TO GIT AND GITHUB,
+          CREATING OF GITHUB PROFILE
+            -> CREATING NEW REPOSITORY
+            -> CREATING CODESPACE FOR THAT REPOSITORY
+            -> INSTALLING NODE JS ON CODESPACE
+                --> Go to menu,
+                --> Go to view,
+                --> Go to Command Palette (ctrl+shift+p)
+                --> Type container and click on codespace: Add Dev Container Configuration Files...
+                --> Search nodejs and click on show all defination. Search again nodejs and select the one that we want in this case we want nodejs with js
+                --> Select the default version.
+                --> Click on OK.
+                --> Machine will be Rebuild now.
 
 
 1.)
