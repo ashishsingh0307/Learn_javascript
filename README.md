@@ -96,4 +96,4 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
 
 
 
-video 4 : 9:11
+video 6 : 5:49
