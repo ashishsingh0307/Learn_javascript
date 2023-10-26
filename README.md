@@ -26,7 +26,7 @@ VIDEO 3 - INTRO TO GIT AND GITHUB,
 VIDEO 4 - INTRO TO VARIABLES
 
             -> VAR - var accountId || var is a keyword
-                -->
+                --> In Scope
             -> LET - let accountId || let is a keyword
                 -->
             -> CONST - const accountId || const is a keyword
@@ -35,6 +35,9 @@ VIDEO 4 - INTRO TO VARIABLES
           INTRO TO COMMENTS
             1.) PUT // IN FRONT OF A LINE OR STARTING OF A LINE THEN THAT LINE WILL BE COMMENTED OUT
             2.) /* _ _ _ */ THIS IS A MULTILINE COMMENT WHICH CAN CONTAINER MULTIPLE LINES
+
+          INTRO TO console.table()
+            -> Syntax : console.table([variableName1, variableName2, variableName3, ...])
 
 
 
