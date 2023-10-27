@@ -118,6 +118,18 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
           -> POWER (**)
           -> MODULAS (%)
 
+          -> ADDING 2 STRINGS
+          -> ADDING 1 NUMBER AND 1 STRING (WHATEVER COMES FIRST EITHER 'STRING' OR 'NUMBER' WILL BE CONVERTED TO THE FIRST DATATYPE)
+                example:
+                    ("1" + 2) => 12
+                    (1 + "2") => 12
+                    ("1" + 2 + 2) => 122
+                    (1 + 2 + "2") => 32
+                if we print true it will give true but if we do the following
+                    +true => 1
+                    +"" => 0
+          ->
+
 
 
 
