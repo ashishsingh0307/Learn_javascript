@@ -128,7 +128,10 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
                 if we print true it will give true but if we do the following
                     +true => 1
                     +"" => 0
-          ->
+          -> INCREMENT AND DECREMENT (PREFIX AND POSTFIX)
+                PREFIX - IT CHANGES OR INCREMENT THE VALUE BEFORE THE OPERATION AND GIVE THE CHANGED VALUE
+                POSTFIX - IT CHANGES OR INCREMENT THE VALUE AFTER THE OPERATION AND GIVE THE UNCHANGED VALUE
+
 
 
 
