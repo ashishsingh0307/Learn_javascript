@@ -111,7 +111,12 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
                    33 => 33 (type is string)
 
           2.) OPERATIONS
-          ->
+          -> ADDITION (+)
+          -> SUBTRACTION (-)
+          -> MULTIPLICATION (*)
+          -> DIVISION (/)
+          -> POWER (**)
+          -> MODULAS (%)
 
 
 
