@@ -110,6 +110,8 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
                    {IN STRING CONVERSION}
                    33 => 33 (type is string)
 
+VIDEO 7 - DATATYPES CONVERSION AND OPERATIONS ===========================================================================================
+
           2.) OPERATIONS
           -> ADDITION (+)
           -> SUBTRACTION (-)
@@ -131,6 +133,33 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
           -> INCREMENT AND DECREMENT (PREFIX AND POSTFIX)
                 PREFIX - IT CHANGES OR INCREMENT THE VALUE BEFORE THE OPERATION AND GIVE THE CHANGED VALUE
                 POSTFIX - IT CHANGES OR INCREMENT THE VALUE AFTER THE OPERATION AND GIVE THE UNCHANGED VALUE
+
+
+VIDEO 8 - COMPARISION IN DATATYPES ======================================================================================================
+
+          -> COMPARISIONS OPERATORS
+                --> LESS THAN (<)
+                --> LESS THAN EQUAL (<=)
+                --> GREATER THAN (>)
+                --> GREATER THEN EQUAL (>=)
+                --> EQUAL TO (==)
+                --> NOT EQUAL TO (!=)
+                --> TRIPLE EQUAL TO (===)
+                --> NOT DOUBLE EQUAL TO (!==)
+
+                Some Examples
+
+                -> console.log(null > 0); // false
+                -> console.log(null == 0); // false
+                -> console.log(null >= 0); // true
+
+                The Reason is that an equality check '==' and comparisons '> < >= <=' work differently.
+                Because Comparisons convert null to a number, treating it as 0.
+                That's why (3) null>=0 is true and (1) null>0 is false.
+
+                -> console.log(undefined > 0); // false
+                -> console.log(undefined == 0); // false
+                -> console.log(undefined < 0); // true
 
 
 
