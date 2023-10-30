@@ -166,8 +166,12 @@ VIDEO 8 - COMPARISION IN DATATYPES =============================================
 
 VIDEO 9 - DATATYPES IN JAVASCRIPT
 
-          ->
+          -> CALL BY REFERENCE & CALL BY VALUE
 
+            --> PRIMITIVE DATATYPES / CALL BY VALUE
+                ---> STRING, NUMBER, BOOLEAN, NULL, UNDEFINED, SYMBOL, BIGINT.
+            --> NON PRIMITIVE DATATYPES / REFERENCE TYPE
+                --->
 
 
 
