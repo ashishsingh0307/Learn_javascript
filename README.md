@@ -171,9 +171,17 @@ VIDEO 9 - DATATYPES IN JAVASCRIPT
             --> PRIMITIVE DATATYPES / CALL BY VALUE
                 ---> STRING, NUMBER, BOOLEAN, NULL, UNDEFINED, SYMBOL, BIGINT.
             --> NON PRIMITIVE DATATYPES / REFERENCE TYPE
-                --->
+                ---> ARRAYS, OBJECTS, FUNCTIONS
 
+          -> JAVASCRIPT IS DAYNAMICALLY TYPED LANGUAGE OR STATICALLY TYPED LANGUAGE.
+                => JavaScript is a dynamically typed language. In a dynamically typed language like JavaScript, variable data types are determined at runtime, not at the time of variable declaration. This means that you can change the type of a variable during the execution of your program.
 
+          -> ARRAY SYNTAX
+            --> const/let myArr = ["value1", "value2", "value3"];
+          -> OBJECT SYNTAX
+            --> const/let myobj = { key1: value1, key2: value2 }
+          -> FUNCTION SYNTAX
+            --> const/let myfunc = function(arguments, ... , ...){function's  definination }
 
 
 video 9 : 00:00
