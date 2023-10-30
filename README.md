@@ -184,4 +184,4 @@ VIDEO 9 - DATATYPES IN JAVASCRIPT
             --> const/let myfunc = function(arguments, ... , ...){function's  definination }
 
 
-video 9 : 00:00
+video 10 : 00:00
