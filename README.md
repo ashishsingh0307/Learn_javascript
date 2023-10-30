@@ -164,8 +164,9 @@ VIDEO 8 - COMPARISION IN DATATYPES =============================================
                 -> console.log(undefined == 0); // false
                 -> console.log(undefined < 0); // true
 
+VIDEO 9 - DATATYPES IN JAVASCRIPT
 
-
+          ->
 
 
 
