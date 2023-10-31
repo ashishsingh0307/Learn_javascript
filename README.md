@@ -219,7 +219,7 @@ VIDEO 11 - STRINGS
               IN ABOVE EXAMPLE WE USED BACKTICKS AND WROTE A STRING IN IT WITH ${} AS INJECTING VARIABLE VALUE IN THE REST OF THE STRING.
            -> WE CAN DECLARE OR DEFINE VARIABLE USING ANOTHER METHOD :
               EXAMPLE :
-                const gameName = new String('ashish');
+                const gameName = new String('ashish-singh');
                 => ABOVE EXAMPLE IS WAY TO DECLARE OR DEFINE STRING WITH KEY VALUE PAIRS AND ITS TYPE IS OBJECT.
                 => IT GIVES US LENGTH PROPERTY.
                 => IT ALSO GIVES US SO MANY PROTOTYPES.
@@ -239,7 +239,15 @@ VIDEO 11 - STRINGS
                 4) INDEXOF (METHOD) ==> IT IS USED TO CHECK THE INDEX WITH THE HELP OF VALUE.
                     --> USAGE :
                           gameName.indexOf('a'); // OUTPUT : 0
-
-
+                5) SUBSTRING (METHOD) ==> IT IS USED TO EXTRACT THE SUBSTRING FROM THE ORIGINAL STRING.
+                                          IT TAKES 2 ARGUMENTS (START INDEX) AND (END INDEX)
+                                          (START INDEX) MEANS THAT FROM WHICH INDEX TO START FROM
+                                          (END INDEX) IS NOT EXACTLY INDEX ITS THE RANGE FOR HOW MANY CHARACTER TO STORE IN SUB STRING || ITS EXCLUSIVE.
+                    --> USAGE :
+                          gameName.substring(0, 4); // OUTPUT : ashi
+                6) SLICE (METHOD) ==> IT IS SAME AS SUBSTRING THE ONLY DIFFERENCE IS THAT WE CAN GIVE NEGATIVE VALUES TOO.
+                                      IT TAKE 2 ARGUMENTS JUST LIKE SUBSTRING.
+                    --> USAGE :
+                          gameName.slice(-8, 4); // OUTPUT :
 
 video 10 : 00:00
