@@ -250,4 +250,4 @@ VIDEO 11 - STRINGS
                     --> USAGE :
                           gameName.slice(-8, 4); // OUTPUT :
 
-video 10 : 00:00
+video 11 : 14:34
