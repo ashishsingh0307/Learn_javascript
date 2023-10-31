@@ -219,9 +219,27 @@ VIDEO 11 - STRINGS
               IN ABOVE EXAMPLE WE USED BACKTICKS AND WROTE A STRING IN IT WITH ${} AS INJECTING VARIABLE VALUE IN THE REST OF THE STRING.
            -> WE CAN DECLARE OR DEFINE VARIABLE USING ANOTHER METHOD :
               EXAMPLE :
-                const gameName = new String('hitesh');
-              ABOVE EXAMPLE IS WAY TO DECLARE OR DEFINE STRING WITH KEY VALUE PAIRS AND ITS TYPE IS OBJECT.
-              IT GIVES US LENGTH PROPERTY.
-              IT ALSO GIVES US SO MANY PROTOTYPES.
+                const gameName = new String('ashish');
+                => ABOVE EXAMPLE IS WAY TO DECLARE OR DEFINE STRING WITH KEY VALUE PAIRS AND ITS TYPE IS OBJECT.
+                => IT GIVES US LENGTH PROPERTY.
+                => IT ALSO GIVES US SO MANY PROTOTYPES.
+                TO ACCESS THESE VALUES AND PROTOTYPES, WE CAN USE
+                => console.log(gameName[0]);
+                   console.log(gameName.__proto__);
+           -> THERE ARE MANY METHODS AND PROPERTY WE CAN USE
+                1) LENGTH (PROPERTY) ==> TO CHECK THE LENGTH OF THE STRING.
+                    --> USAGE :
+                          gameName.length // OUTPUT : 5
+                2) TOUPPERCASE (METHOD) ==> TO CHANGE WHOLE STRING TO UPPERCASE || SAME GOES FOR TOLOWERCASE METHOD.
+                    --> USAGE :
+                          gameName.toUpperCase() // OUTPUT : 'ASHISH'
+                3) CHARAT (METHOD) ==> IT IS USED TO CHECK AT THAT INDEX WHICH VALUE EXISTS.
+                    --> USAGE :
+                          gameName.charAt(2); // OUTPUT : h
+                4) INDEXOF (METHOD) ==> IT IS USED TO CHECK THE INDEX WITH THE HELP OF VALUE.
+                    --> USAGE :
+                          gameName.indexOf('a'); // OUTPUT : 0
+
+
 
 video 10 : 00:00
