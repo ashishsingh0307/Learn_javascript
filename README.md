@@ -211,6 +211,11 @@ VIDEO 10 - STACK AND HEAP MEMORY
 
                   {call by reference and call by value}
 
-VIDEO 11 -
+VIDEO 11 - STRINGS
+
+           -> ALWAYS STORED IN SINGLE QUOTES(' ') OR DOUBLE QUOTES(" ")
+           -> WE DONT USE CONCATINATION TO ADD STRING OR ANY STRING WITH VARIABLE VALUE. WE USE STRING INTERPOLATION.
+              EXAMPLE: `This is example of string interpolation ${variable_name}`
+              IN ABOVE EXAMPLE WE USED BACKTICKS AND WROTE A STRING IN IT WITH ${} AS INJECTING VARIABLE VALUE IN THE REST OF THE STRING.
 
 video 10 : 00:00
