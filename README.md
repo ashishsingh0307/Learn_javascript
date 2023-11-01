@@ -219,7 +219,9 @@ VIDEO 11 - STRINGS
               IN ABOVE EXAMPLE WE USED BACKTICKS AND WROTE A STRING IN IT WITH ${} AS INJECTING VARIABLE VALUE IN THE REST OF THE STRING.
            -> WE CAN DECLARE OR DEFINE VARIABLE USING ANOTHER METHOD :
               EXAMPLE :
+
                 const gameName = new String('ashish-singh');
+
                 => ABOVE EXAMPLE IS WAY TO DECLARE OR DEFINE STRING WITH KEY VALUE PAIRS AND ITS TYPE IS OBJECT.
                 => IT GIVES US LENGTH PROPERTY.
                 => IT ALSO GIVES US SO MANY PROTOTYPES.
@@ -264,5 +266,13 @@ VIDEO 11 - STRINGS
                 8) REPLACE (METHOD) ==> IT IS USED TO REPLACE ANY CHARACTERS / SPECIAL CHARACTERS FROM STRING
                     --> USAGE :
                           gameName.replace('WHAT TO REPLACE', 'WHAT TO REPLACE WITH')
+
+                9) INCLUDES (METHOD) ==> IT IS USED FOR CHECKING WHETHER THAT CHARACTER / SET OF CHARACTERS LIES IN THAT STRING OR NOT.
+                    --> USAGE :
+                          gameName.include('ish'); // OUTPUT : TRUE
+
+                10) SPLIT (METHOD) ==> IT IS USED TO SEPARATE STRING INTO AN ARRAY WITH THE HELP OF SOME COMMON CHARACTER.
+                    --> USAGE :
+                          gameName.split('-') // OUTPUT : ['ashish', 'singh']
 
 video 11 : 14:34
