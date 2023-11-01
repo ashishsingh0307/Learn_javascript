@@ -257,11 +257,12 @@ VIDEO 11 - STRINGS
                     --> USAGE :
                           gameName.slice(-8, 4); // OUTPUT : shi
 
-                7) TRIM (METHOD) ==> IT IS USED TO TRIM DOWN THE WHITESPACES
+                7) TRIM (METHOD) ==> IT IS USED TO TRIM DOWN THE WHITESPACES || TRIM HAS TRIM START AND END METHODS ALSO.
                     --> USAGE :
+                          gameName.trim(); // OUTPUT : IF THERE ARE ANY SPACES THEN IT WOULD JUST REMOVE THOSE EXTRA SPACES AND RETURN REST OF THE STRING
 
-
-                8) REPLACE (METHOD) ==>
+                8) REPLACE (METHOD) ==> IT IS USED TO REPLACE ANY CHARACTERS / SPECIAL CHARACTERS FROM STRING
                     --> USAGE :
+                          gameName.replace('WHAT TO REPLACE', 'WHAT TO REPLACE WITH')
 
 video 11 : 14:34
