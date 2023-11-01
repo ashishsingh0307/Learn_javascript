@@ -226,28 +226,42 @@ VIDEO 11 - STRINGS
                 TO ACCESS THESE VALUES AND PROTOTYPES, WE CAN USE
                 => console.log(gameName[0]);
                    console.log(gameName.__proto__);
+
            -> THERE ARE MANY METHODS AND PROPERTY WE CAN USE
+
                 1) LENGTH (PROPERTY) ==> TO CHECK THE LENGTH OF THE STRING.
                     --> USAGE :
                           gameName.length // OUTPUT : 5
+
                 2) TOUPPERCASE (METHOD) ==> TO CHANGE WHOLE STRING TO UPPERCASE || SAME GOES FOR TOLOWERCASE METHOD.
                     --> USAGE :
                           gameName.toUpperCase() // OUTPUT : 'ASHISH'
+
                 3) CHARAT (METHOD) ==> IT IS USED TO CHECK AT THAT INDEX WHICH VALUE EXISTS.
                     --> USAGE :
                           gameName.charAt(2); // OUTPUT : h
+
                 4) INDEXOF (METHOD) ==> IT IS USED TO CHECK THE INDEX WITH THE HELP OF VALUE.
                     --> USAGE :
                           gameName.indexOf('a'); // OUTPUT : 0
+
                 5) SUBSTRING (METHOD) ==> IT IS USED TO EXTRACT THE SUBSTRING FROM THE ORIGINAL STRING.
                                           IT TAKES 2 ARGUMENTS (START INDEX) AND (END INDEX)
                                           (START INDEX) MEANS THAT FROM WHICH INDEX TO START FROM
                                           (END INDEX) IS NOT EXACTLY INDEX ITS THE RANGE FOR HOW MANY CHARACTER TO STORE IN SUB STRING || ITS EXCLUSIVE.
                     --> USAGE :
                           gameName.substring(0, 4); // OUTPUT : ashi
+
                 6) SLICE (METHOD) ==> IT IS SAME AS SUBSTRING THE ONLY DIFFERENCE IS THAT WE CAN GIVE NEGATIVE VALUES TOO.
                                       IT TAKE 2 ARGUMENTS JUST LIKE SUBSTRING.
                     --> USAGE :
-                          gameName.slice(-8, 4); // OUTPUT :
+                          gameName.slice(-8, 4); // OUTPUT : shi
+
+                7) TRIM (METHOD) ==> IT IS USED TO TRIM DOWN THE WHITESPACES
+                    --> USAGE :
+
+
+                8) REPLACE (METHOD) ==>
+                    --> USAGE :
 
 video 11 : 14:34
