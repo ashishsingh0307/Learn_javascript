@@ -276,13 +276,32 @@ VIDEO 11 - STRINGS =============================================================
                           gameName.split('-') // OUTPUT : ['ashish', 'singh']
 
 VIDEO 12 - NUMBERS AND MATHS ====================================================================================================================
-           --> WHILE USING NUMBERS DATAYPES IN JS WE CAN STORE NUMBERS DIRECTLY IN THE VARIABLE WITHOUT TELLING IT WHETHER ITS A NUMBER OR FLOATING POINT NUMBER, etc.
-           --> WE CAN DECLARE AND INITIALISE NUMBERS IN A VARIABLE AS FOLLOWS
-                ---> let num = 10; || let num = 10.01;
-           --> WE HAVE ANOTHER WAY of DECLARING NUMBERS IN JS ALSO. WHICH IS AS FOLLOWS
-                ---> let num = new Number(value); || let num = new Number(100);
+
+            -> WHILE USING NUMBERS DATAYPES IN JS WE CAN STORE NUMBERS DIRECTLY IN THE VARIABLE WITHOUT TELLING IT WHETHER ITS A NUMBER OR FLOATING POINT NUMBER, etc.
+            -> WE CAN DECLARE AND INITIALISE NUMBERS IN A VARIABLE AS FOLLOWS
+                --> let num = 10; || let num = 10.01; // OUTPUT : 10, 10.01
+            -> WE HAVE ANOTHER WAY of DECLARING NUMBERS IN JS ALSO. WHICH IS AS FOLLOWS
+                --> let num = new Number(value); || let num = new Number(100); // OUTPUT : [Number: 100]
+
+                EXAMPLE : const score = 400;
+                          const balance = new Number(100)
 
             { THE ONLY DIFFERENCE IN EXPLICITY DECLARING ANY DATA TYPE IS THAT WHEN WE CONSOLE THIS VALUE IN BROWSER IT WILL GIVE US PROTOTYPES WHICH WE CAN SEE AND USE AS PER OUR REQUIREMENTS }
+
+            -> THERE ARE METHODS AND PROPERTY WE CAN USE IN NUMBERS
+
+                1) TOSTRING (METHOD) ==> THIS METHOD IS USED TO TURN ANY DATATYPE INTO STRING.
+                    --> USAGE :
+                          console.log(balance); // OUTPUT : [Number: 100]
+                          balance.toString(); // OUTPUT : 100
+
+                2) TOFIXED (METHOD) ==> THIS METHOD IS USED TO TAKE THE PRECISION VALUE.
+                    --> USAGE :
+                          balance.toFixed(number); // if number = 2 || OUTPUT : 100.00
+
+
+
+
 
 
 
