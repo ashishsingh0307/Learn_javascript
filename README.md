@@ -292,12 +292,63 @@ VIDEO 12 - NUMBERS AND MATHS ===================================================
 
                 1) TOSTRING (METHOD) ==> THIS METHOD IS USED TO TURN ANY DATATYPE INTO STRING.
                     --> USAGE :
-                          console.log(balance); // OUTPUT : [Number: 100]
-                          balance.toString(); // OUTPUT : 100
+                            console.log(balance); // OUTPUT : [Number: 100]
+                            balance.toString(); // OUTPUT : 100
 
                 2) TOFIXED (METHOD) ==> THIS METHOD IS USED TO TAKE THE PRECISION VALUE.
                     --> USAGE :
-                          balance.toFixed(number); // if number = 2 || OUTPUT : 100.00
+                            balance.toFixed(number); // if number = 2 || OUTPUT : 100.00
+
+                3) TOPRECISION (METHOD) ==> THIS METHOD ACCEPTS VALUE FROM 1 TO 21.
+                    --> USAGE :
+                            balance.toPrecision(number from 1 to 21); // if balance is 123.8966 && if number = 3 || OUTPUT : 124
+                            balance.toPrecision(number from 1 to 21); // if balance is 123.8966 && if number = 4 || OUTPUT : 123.9
+                            balance.toPricision(number from 1 to 21); // if balance is 1123.8966 && if number = 3 || OUTPUT : 1.12e+3
+
+                4) TOLOCALSTRING (METHOD) ==> THIS IS THE METHOD WHICH CONVERTS NUMBER INTO CURRENCY FORMAT
+                    --> USAGE :
+                            INSTANCE :
+                                const hundreds = 1000000;
+                                console.log(hundreds.toLocaleString()); // OUTPUT : 1,000,000
+                                {TO CHANGE THE VALUE FORMAT FROM US TO INDIA WE NEED TO PASS AN ARGUMENT || THERE ARE MORE VALUES FOR ARGUMENTS}
+                                console.log(hundreds.toLocaleString('en-IN')); // OUTPUT : 10,00,000
+
+            THERE IS A MATH LIBRARY IN JS
+
+                1) ABSOLUTE {.abs()} ==> CONVERTS NEGATIVE VALUE TO POSITIVE VALUE
+                    --> USAGE :
+                            Math.abs(-4); // OUTPUT : 4
+
+                2) ROUND {.round()} ==> IT ROUNDS OFF THE VALUE
+                    --> USAGE :
+                            Math.round(4.3); // OUTPUT : 4
+                            Math.round(4.5); // OUTPUT : 5
+
+                3) CEIL & FLOOR {.ceil(), .floor()} ==> IT LETS US CONTROL THE VALUE OF WHICH VALUE WE WANT AFTER ROUNDING OFF
+                                                        EITHER ITS CEILING VALUE (upper) OR FLOOR VALUE (lower)
+                    --> USAGE :
+                            Math.ceil(4.3); // OUTPUT : 5 // THIS TAKES THE UPPER VALUE
+                            Math.floor(4.6); // OUTPUT : 4 // THIS TAKES THE LOWER VALUE
+
+                4) SQUAREROOT {.sqrt()} ==> THIS FINDS OUT THE SQUARE ROOT OF ANY NUMBER
+                5) POWER {.pow()} ==> THIS IS TO FIND THE EXPONENTIAL VALUE OF THE NUMBER
+                6) MIN {.min} ==> THIS FINDS THE MINIMUM VALUE FROM LIST OF NUMBERS
+                7) MAX {.max} ==> THIS FINDS THE MAXIMUM VALUE FROM LIST OF NUMBERS
+                8) RANDOM {.random} ==> THIS IS TO GET RANDOM VALUE FROM SPECIFIC RANGE -> (0-1)
+                    --> USAGE:
+                            Math.random(); // 0.5867695... // EVERYTIME IT WILL GIVE DIFFERENT ANSWER BUT IN BETWEEN 0 TO 1
+                            Math.random()*10; // 1.5867695... // THIS IS GOING TO GIVE US DIFFERENT VALUE BUT IN BETWEEN 0 TO 10
+                            (Math.random()*10)+1; // 2.5867695... // THIS IS GOING TO GIVE US DIFFERENT VALUE BUT IN BETWEEN 1 TO 11
+                            (Math.Floor(Math.random()*10)+1); // 2 // THIS IS GOING TO GIVE US ROUNDED LOWER VALUE BETWEEN 1 TO 11
+
+                            => THERE IS A FORMULA <=
+
+                            const min = 10;
+                            const max = 20;
+
+                            FORMULA FOR RANDOM NUMBER GEREATOR BETWEEN 2 NUMBERS.
+                            console.log(Math.floor(Math.random() * (max-min + 1)) + min);
+
 
 
 
