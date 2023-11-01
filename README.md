@@ -349,17 +349,27 @@ VIDEO 12 - NUMBERS AND MATHS ===================================================
                             FORMULA FOR RANDOM NUMBER GEREATOR BETWEEN 2 NUMBERS.
                             console.log(Math.floor(Math.random() * (max-min + 1)) + min);
 
+VIDEO 13 - DATE AND TIME ================================================================================================================
+
+            ->
+
+VIDEO 14 - ARRAYS =======================================================================================================================
+
+            -> ARRAY IS A NON PRIMITIVE DATATYPE WHICH CAN STORE ANY VALUE FROM PRIMITIVE DATATYPES OR NON PRIMITIVE DATATYPES
+            -> IF WE GIVE MULTIPLE VALUES IN BRACKETS => [] THEN IT IS CALLED ARRAY
+                EXAMPLE:
+                    const myArr = [1,2,3,4,"Hi",'bye', true];
+                    {IN ABOVE BRACKETS WE HAVE VALUE 1, 2, 3, 4 etc. THEY ARE CALLED ELEMENT FOR AN ARRAY}
+                    {ARRAY IS CONSIST OF INDEXES AND VALUES}
+                    {INDEXES STARTS FORM 0, 1, 2, 3 and so on}
 
 
 
 
 
+NOTE : () => Paranthesis.
+       [] => Brackets.
+       {} => Braces.
 
-
-
-
-
-
-
-
-video 12 :
+video 13 : pending
+video 14 :
