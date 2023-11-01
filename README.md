@@ -275,4 +275,14 @@ VIDEO 11 - STRINGS
                     --> USAGE :
                           gameName.split('-') // OUTPUT : ['ashish', 'singh']
 
+VIDEO 12 -
+
+
+
+
+
+
+
+
+
 video 11 : 14:34
