@@ -164,7 +164,7 @@ VIDEO 8 - COMPARISION IN DATATYPES =============================================
                 -> console.log(undefined == 0); // false
                 -> console.log(undefined < 0); // true
 
-VIDEO 9 - DATATYPES IN JAVASCRIPT
+VIDEO 9 - DATATYPES IN JAVASCRIPT =========================================================================================================
 
           -> CALL BY REFERENCE & CALL BY VALUE
 
@@ -183,7 +183,7 @@ VIDEO 9 - DATATYPES IN JAVASCRIPT
           -> FUNCTION SYNTAX
             --> const/let myfunc = function(arguments, ... , ...){function's  definination }
 
-VIDEO 10 - STACK AND HEAP MEMORY
+VIDEO 10 - STACK AND HEAP MEMORY ===========================================================================================================
 
            -> TYPES OF MEMORY
 
@@ -211,7 +211,7 @@ VIDEO 10 - STACK AND HEAP MEMORY
 
                   {call by reference and call by value}
 
-VIDEO 11 - STRINGS
+VIDEO 11 - STRINGS ========================================================================================================================
 
            -> ALWAYS STORED IN SINGLE QUOTES(' ') OR DOUBLE QUOTES(" ")
            -> WE DONT USE CONCATINATION TO ADD STRING OR ANY STRING WITH VARIABLE VALUE. WE USE STRING INTERPOLATION.
@@ -275,7 +275,14 @@ VIDEO 11 - STRINGS
                     --> USAGE :
                           gameName.split('-') // OUTPUT : ['ashish', 'singh']
 
-VIDEO 12 -
+VIDEO 12 - NUMBERS AND MATHS ====================================================================================================================
+           --> WHILE USING NUMBERS DATAYPES IN JS WE CAN STORE NUMBERS DIRECTLY IN THE VARIABLE WITHOUT TELLING IT WHETHER ITS A NUMBER OR FLOATING POINT NUMBER, etc.
+           --> WE CAN DECLARE AND INITIALISE NUMBERS IN A VARIABLE AS FOLLOWS
+                ---> let num = 10; || let num = 10.01;
+           --> WE HAVE ANOTHER WAY of DECLARING NUMBERS IN JS ALSO. WHICH IS AS FOLLOWS
+                ---> let num = new Number(value); || let num = new Number(100);
+
+            { THE ONLY DIFFERENCE IN EXPLICITY DECLARING ANY DATA TYPE IS THAT WHEN WE CONSOLE THIS VALUE IN BROWSER IT WILL GIVE US PROTOTYPES WHICH WE CAN SEE AND USE AS PER OUR REQUIREMENTS }
 
 
 
