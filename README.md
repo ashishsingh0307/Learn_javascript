@@ -365,6 +365,15 @@ VIDEO 13 - DATE AND TIME =======================================================
                     console.log(myDate.toJSON()); // OUTPUT : 2023-09-29T03:05:09.556Z
                     console.log(myDate.toLocaleDateString); // OUTPUT : [Function: toLocaleDateString]
                     console.log(myDate.toLocaleString()); // OUTPUT : 9/29/2023, 8:36:39 AM
+            -> DATE IS AN OBJECT IN JS.
+            -> NOW IF WE DECLARE AN ARBITRARAY DATE WE CAN DO AS THE FOLLOWING
+                --> let myCreatedDate = new Date(2023, 0, 23);
+                    console.log(myCreatedDate); // OUTPUT : 2023-01-23T00:00:00.000Z
+                    => IF WE CONVERT THIS INTO STRING WE WILL GET THE FOLLOWING OUTPUT
+                    console.log(myCreatedDate.toDateString()); // OUTPUT : Mon Jan 23 2023
+                --> let myCreatedDate = new Date(2023, 0, 23, 5, 3);
+                    console.log(myCreatedDate.toLocaleString()); // OUTPUT : 1/23/2023, 5:03:00 AM
+
 
 VIDEO 14 - ARRAYS =======================================================================================================================
 
