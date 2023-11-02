@@ -351,7 +351,20 @@ VIDEO 12 - NUMBERS AND MATHS ===================================================
 
 VIDEO 13 - DATE AND TIME ================================================================================================================
 
-            ->
+            -> THIS IS A PAIN POINT OF JAVASCRIPT, TO COMPARE DATES, TO STORE DATES, TO DECLARE DATES, EVERYTHING IN JS IS LITTLE TRICKY.
+            -> DATES ARE STARTING FROM JANUARY 1, 1970, UTC
+            -> DATES ARE CALCULATED IN MILISECONDS.
+            -> TC39 IS WORKING ON DATES IN JS WHICH IS CALLED TEMPORAL (A DATE/TIME API).
+            -> TO DECLARE DATE WE DO THE FOLLOWING
+                --> let myDate = new Date();
+                    console.log(myDate); // OUTPUT : 2023-03-01T12:03:00:900Z {THIS IS NOT AT ALL READABLE}
+                    => IF WE CONVERT THIS DATE IN STRING THEN WE WILL GET SOMETHING LITTLE READABLE
+                    console.log(myDate.toString()); // OUTPUT : WED MAR 01 2023 12:03:41 GMT+0000 (Coordinated Universal Time)
+                    console.log(myDate.toDateString()); // OUTPUT : Fri Sep 29 2023
+                    console.log(myDate.toISOString()); // OUTPUT : 2023-09-29T03:05:09.556Z
+                    console.log(myDate.toJSON()); // OUTPUT : 2023-09-29T03:05:09.556Z
+                    console.log(myDate.toLocaleDateString); // OUTPUT : [Function: toLocaleDateString]
+                    console.log(myDate.toLocaleString()); // OUTPUT : 9/29/2023, 8:36:39 AM
 
 VIDEO 14 - ARRAYS =======================================================================================================================
 
@@ -359,9 +372,14 @@ VIDEO 14 - ARRAYS ==============================================================
             -> IF WE GIVE MULTIPLE VALUES IN BRACKETS => [] THEN IT IS CALLED ARRAY
                 EXAMPLE:
                     const myArr = [1,2,3,4,"Hi",'bye', true];
-                    {IN ABOVE BRACKETS WE HAVE VALUE 1, 2, 3, 4 etc. THEY ARE CALLED ELEMENT FOR AN ARRAY}
-                    {ARRAY IS CONSIST OF INDEXES AND VALUES}
-                    {INDEXES STARTS FORM 0, 1, 2, 3 and so on}
+                    =>{IN ABOVE BRACKETS WE HAVE VALUE 1, 2, 3, 4 etc. THEY ARE CALLED ELEMENT FOR AN ARRAY}
+                    =>{ARRAY IS CONSIST OF INDEXES AND VALUES}
+                    =>{INDEXES STARTS FORM 0, 1, 2, 3 and so on}
+                    SO, IF WE WANT TO FIND THE VALUE FROM ARRAY WE NEED TO FIND IT VIA INDEX AS FOLLOWS
+                    myArr[0]; // OUTPUT : 1
+                    myArr[1]; // OUTPUT : 2
+                    myArr[4]; // OUTPUT : "Hi"
+                    myArr[6]; // OUTPUT : true
 
 
 
