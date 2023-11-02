@@ -356,6 +356,7 @@ VIDEO 13 - DATE AND TIME =======================================================
             -> DATES ARE CALCULATED IN MILISECONDS.
             -> TC39 IS WORKING ON DATES IN JS WHICH IS CALLED TEMPORAL (A DATE/TIME API).
             -> TO DECLARE DATE WE DO THE FOLLOWING
+
                 --> let myDate = new Date();
                     console.log(myDate); // OUTPUT : 2023-03-01T12:03:00:900Z {THIS IS NOT AT ALL READABLE}
                     => IF WE CONVERT THIS DATE IN STRING THEN WE WILL GET SOMETHING LITTLE READABLE
@@ -365,14 +366,46 @@ VIDEO 13 - DATE AND TIME =======================================================
                     console.log(myDate.toJSON()); // OUTPUT : 2023-09-29T03:05:09.556Z
                     console.log(myDate.toLocaleDateString); // OUTPUT : [Function: toLocaleDateString]
                     console.log(myDate.toLocaleString()); // OUTPUT : 9/29/2023, 8:36:39 AM
+
             -> DATE IS AN OBJECT IN JS.
             -> NOW IF WE DECLARE AN ARBITRARAY DATE WE CAN DO AS THE FOLLOWING
+
                 --> let myCreatedDate = new Date(2023, 0, 23);
                     console.log(myCreatedDate); // OUTPUT : 2023-01-23T00:00:00.000Z
                     => IF WE CONVERT THIS INTO STRING WE WILL GET THE FOLLOWING OUTPUT
                     console.log(myCreatedDate.toDateString()); // OUTPUT : Mon Jan 23 2023
+
                 --> let myCreatedDate = new Date(2023, 0, 23, 5, 3);
                     console.log(myCreatedDate.toLocaleString()); // OUTPUT : 1/23/2023, 5:03:00 AM
+
+                {THIS IS DONE IF WE WANT DATE IN MM/DD/YYYY OR DD/MM/YYYY FORMAT}
+
+                --> let myCreatedDate2 = new Date("2023-01-14");
+                    console.log(myCreatedDate2.toLocaleString()); // OUTPUT : 1/14/2023, 5:30:00 AM
+
+                --> let myCreatedDate3 = new Date("02-14-2023");
+                    console.log(myCreatedDate3.toLocaleString()); // OUTPUT : 2/14/2023, 12:00:00 AM
+
+                {THERE ARE TIMESTAMPS TOO, THIS IS THE EXACT CURRENT TIME THAT IS ON THE CLOCK}
+
+                --> let myTimeStamp = Date.now(); || let myTimeStamp = new Date.now(); // CAN WE WRITTEN EITHER WAY.
+                    console.log(myTimeStamp); // OUTPUT : 1695956962495
+                    console.log(myCreatedDate.getTime()); // OUTPUT : 1674412200000
+                    console.log(Date.now()); // OUTPUT : 1695957290574
+                    console.log(Date.now()/1000); // OUTPUT : 1695957290.574
+                    console.log(Math.floor(Date.now()/1000)); // OUTPUT : 1695957290
+
+                --> let newDate = new Date();
+                    console.log(newDate); // OUTPUT : 2023-09-29T13:56:15.204Z
+                    console.log(newDate.getMonth()); // OUTPUT : 8
+                    console.log(newDate.getDay()); // OUTPUT : 5
+
+                --> newDate.toLocaleString('default', {
+                        weekday : "long",
+                        timeZone : '....'
+                    });
+
+                    IN TOLOCALESTRING METHODS WE DEFINE OBJECTS AND MANY PARAMETERS. ABOVE METHOD IS GOING TO WORK SAME A LINE NUMBER 368
 
 
 VIDEO 14 - ARRAYS =======================================================================================================================
