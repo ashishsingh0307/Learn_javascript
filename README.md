@@ -458,6 +458,15 @@ VIDEO 14 - ARRAYS ==============================================================
                             if
                             console.log(myArr2.indexOf(9)); // OUTPUT : -1 {BECAUSE THIS VALUE DOES NOT EXIST IN THE INDEX RANGE SO THAT IS WHY IT GIVES US THE INDEX -1}
 
+                7) JOIN (METHOD) ==> THIS METHOD LETS US CONVERT ARRAY INTO STRING AND LETS US JOIN TWO ARRAY INTO STRING
+                    --> USAGE :
+                            cosnt newArr = myArr2.join();
+                            console.log(myArr2); // OUTPUT : [1,2,3,4,5]
+                            console.log(newArr); // OUTPUT : 0,1,2,3,4,5
+                            console.log(typeOf newArr); // OUTPUT : string
+
+                8)
+
 
 
 NOTE : () => Paranthesis.
