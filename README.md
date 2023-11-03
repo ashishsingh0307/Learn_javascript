@@ -412,7 +412,7 @@ VIDEO 14 - ARRAYS ==============================================================
 
             -> ARRAY IS A NON PRIMITIVE DATATYPE WHICH CAN STORE ANY VALUE FROM PRIMITIVE DATATYPES OR NON PRIMITIVE DATATYPES
             -> IF WE GIVE MULTIPLE VALUES IN BRACKETS => [] THEN IT IS CALLED ARRAY
-                EXAMPLE:
+                EXAMPLE 1:
                     const myArr = [1,2,3,4,"Hi",'bye', true];
                     =>{IN ABOVE BRACKETS WE HAVE VALUE 1, 2, 3, 4 etc. THEY ARE CALLED ELEMENT FOR AN ARRAY}
                     =>{ARRAY IS CONSIST OF INDEXES AND VALUES}
@@ -422,8 +422,41 @@ VIDEO 14 - ARRAYS ==============================================================
                     myArr[1]; // OUTPUT : 2
                     myArr[4]; // OUTPUT : "Hi"
                     myArr[6]; // OUTPUT : true
+                EXAMPLE 2:
+                    const myHeros = ["Shaktiman", "naagraj"];
+                    or
+                    const myArr2 = new Array(1,2,3,4,5);
+                    {IN ARRAYS WE GET THE PROPERTY 'LENGTH' and PROTOTYPE, THESE PROTOTYPES HAVE FURTHER PROTOTYPES}
+            -> ARRAY METHODS THAT WE ARE GOING TO USE
+                1) PUSH (METHOD) ==> THIS METHOD ADDS AN ELEMENT TO THE END OF THE ARRAY.
+                    --> USAGE :
+                            myArr2.push(6);
+                            console.log(myArr2); // OUTPUT : [1,2,3,4,5,6] {THIS METHOD CHANGES THE VALUE, AS IT IS A REFERNCE TO THAT ARRAY}
 
+                2) POP (METHOD) ==> THIS METHOD REMOVES AN ELEMENT FROM THE END OF THE ARRAY.
+                    --> USAGE :
+                            myArr2.pop();
+                            console.log(myArr2); // OUTPUT : [1,2,3,4,5]
 
+                3) UNSHIFT (METHOD) ==> THIS METHOD ADDS AN ELEMENT TO THE START OF THE ARRAY.
+                    --> USAGE :
+                            myArr2.unshift(0);
+                            console.log(myArr2); // OUTPUT : [0,1,2,3,4,5]
+
+                4) SHIFT (METHOD) ==> THIS METHOD REMOVES AN ELEMENT FROM THE START OF THE ARRAY.
+                    --> USAGE :
+                            myArr2.shift();
+                            console.log(); // OUTPUT : [1,2,3,4,5]
+
+                5) INCLUDES (METHOD) ==> THIS METHOD ONLY RETURN TRUE OR FALSE BASED ON WHETHER THAT ARRAY HAS THAT ELEMENT OR NOT.
+                    --> USAGE :
+                            console.log(myArr2.includes(9)); // OUTPUT : false
+
+                6) INDEXOF (METHOD) ==> THIS METHOD TELLS US THE INDEX AT WHICH THAT VALUE EXIST.
+                    --> USAGE :
+                            console.log(myArr2.indexOf(3)); // OUTPUT : 2
+                            if
+                            console.log(myArr2.indexOf(9)); // OUTPUT : -1 {BECAUSE THIS VALUE DOES NOT EXIST IN THE INDEX RANGE SO THAT IS WHY IT GIVES US THE INDEX -1}
 
 
 
@@ -431,5 +464,5 @@ NOTE : () => Paranthesis.
        [] => Brackets.
        {} => Braces.
 
-video 13 : pending
-video 14 :
+
+video 14 : 4:05
