@@ -475,8 +475,8 @@ VIDEO 14 - ARRAYS ==============================================================
                 9) SPLICE (METHOD) ==> THIS METHOD LET US DO THE SAME THING AS SLICE. || IT MANIPULATES THE ORIGINAL ARRAY AS IT A REFENCE TO THE ORIGINAL ARRAY
                     --> USAGE :
                             const myn2 = myArr.splice(1,3); // SPLICE MANIPULATE THE ORIGINAL ARRAY
-                            console.log(myn2); // OUTPUT : [2,3]
-                            console.log("C ", myArr); // OUTPUT : C [1,4,5];
+                            console.log(myn2); // OUTPUT : [2,3,4] (RANGE IS INCLUSIVE)
+                            console.log("C ", myArr); // OUTPUT : C [1,5];
 
 
 
