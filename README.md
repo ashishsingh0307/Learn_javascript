@@ -465,7 +465,19 @@ VIDEO 14 - ARRAYS ==============================================================
                             console.log(newArr); // OUTPUT : 0,1,2,3,4,5
                             console.log(typeOf newArr); // OUTPUT : string
 
-                8)
+                8) SLICE (METHOD) ==> THIS METHOD LET US SLICE THE ARRAY FROM CERTAIN INDEX TO THE RANGE WE HAVE GIVEN. || IT DOESNOT MANIPULATE THE ORIGINAL ARRAY. AS IT MAKES THE COPY THE ARRAY. || IT RETURN A COPY OF A SECTION OF AN ARRAY.
+                    --> USAGE :
+                            console.log("A ", myArr2); // OUTPUT : A [1,2,3,4,5]
+                            const myn1 = myArr2.slice(1,3); // SLICE DOESNOT MANIPULATE THE ORIGINAL ARRAY
+                            console.log(myn1); // OUTPUT : [2,3]
+                            console.log("B ", myArr2); // OUTPUT : B [1,2,3,4,5]
+
+                9) SPLICE (METHOD) ==> THIS METHOD LET US DO THE SAME THING AS SLICE. || IT MANIPULATES THE ORIGINAL ARRAY AS IT A REFENCE TO THE ORIGINAL ARRAY
+                    --> USAGE :
+                            const myn2 = myArr.splice(1,3); // SPLICE MANIPULATE THE ORIGINAL ARRAY
+                            console.log(myn2); // OUTPUT : [2,3]
+                            console.log("C ", myArr); // OUTPUT : C [1,4,5];
+
 
 
 
