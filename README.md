@@ -531,7 +531,9 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                         console.log(Array.of(score1, score2, score3, ...score4)); // OUTPUT : [100, 200, 300, 400, 500, 600]
                         ABOVE CONSOLE LOG IS USING Array.of() METHOD TO MERGE ALL THE VALUES AND AND ARRAY WE USED SPREAD OPERATOR AND MADE A NEW ARRAY
 
+VIDEO 16 - OBJECTS ===============================================================================================================================
 
+            ->
 
 
 
