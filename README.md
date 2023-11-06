@@ -41,7 +41,7 @@ VIDEO 4 - INTRO TO VARIABLES ===================================================
                     cannot be reassigned.
 
           INTRO TO COMMENTS
-            1.) PUT // IN FRONT OF A LINE OR STARTING OF A LINE THEN THAT LINE WILL BE COMMENTED OUT
+            1.) PUT IN FRONT OF A LINE OR STARTING OF A LINE THEN THAT LINE WILL BE COMMENTED OUT
             2.) /* _ _ _ */ THIS IS A MULTILINE COMMENT WHICH CAN CONTAINER MULTIPLE LINES
 
           INTRO TO console.table()
@@ -56,7 +56,7 @@ VIDEO 5 - INTRO TO DATATYPES ===================================================
           -> console.log() => THIS IS A FUNCTION WHICH PRINTS THE VALUE IN TERMINAL OR CONSOLE.
 
           ***CODE READABILITY SHOULD BE UTMOST PRIORITY***
-          ***OFFICIAL JS DOCUMENTATION (https://tc39.es/ecma262/#sec-intro)***
+          ***OFFICIAL JS DOCUMENTATION (https:tc39.es/ecma262/#sec-intro)***
           ***OR WE CAN USE MDN (mdn is not official documentation though)***
 
           => DATATYPES
@@ -67,8 +67,8 @@ VIDEO 5 - INTRO TO DATATYPES ===================================================
                 ==> NUMBERS
                 ==> BIGINT
                 ==> BOOLEAN
-                ==> NULL // standalone value || type is object
-                ==> UNDEFINED // type is undefined
+                ==> NULL standalone value || type is object
+                ==> UNDEFINED type is undefined
                 ==> SYMBOL
 
             NON PRIMITIVE DATATYPES
@@ -83,12 +83,12 @@ VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ==================================
           1.) CONVERSIONS
           ->  INSTANCE 1 => let score = "33";
                             let valueInNumber = Number(score);
-                            console.log(typeof valueInNumber); // OUTPUT : number
-                            console.log(valueInNumber); // OUTPUT : 33
+                            console.log(typeof valueInNumber); OUTPUT : number
+                            console.log(valueInNumber); OUTPUT : 33
               INSTANCE 2 => let score = "33abc";
                             let valueInNumber = Number(score);
-                            console.log(typeof valueInNumber); // OUTPUT : number
-                            console.log(valueInNumber); // OUTPUT : NaN (not a number)
+                            console.log(typeof valueInNumber); OUTPUT : number
+                            console.log(valueInNumber); OUTPUT : NaN (not a number)
 
           -> Above Examples are showing that 33 is a string which is converted into a number and there is no problem converting it to number.
              But in 2nd Example we have 33abc as a string which got converted into a number but have NaN as a value.
@@ -149,20 +149,20 @@ VIDEO 8 - COMPARISION IN DATATYPES =============================================
 
                 Some Examples
 
-                -> console.log("2" > 1); // true
-                -> console.log("02" > 1); // true
+                -> console.log("2" > 1); true
+                -> console.log("02" > 1); true
 
-                -> console.log(null > 0); // false
-                -> console.log(null == 0); // false
-                -> console.log(null >= 0); // true
+                -> console.log(null > 0); false
+                -> console.log(null == 0); false
+                -> console.log(null >= 0); true
 
                 The Reason is that an equality check '==' and comparisons '> < >= <=' work differently.
                 Because Comparisons convert null to a number, treating it as 0.
                 That's why (3) null>=0 is true and (1) null>0 is false.
 
-                -> console.log(undefined > 0); // false
-                -> console.log(undefined == 0); // false
-                -> console.log(undefined < 0); // true
+                -> console.log(undefined > 0); false
+                -> console.log(undefined == 0); false
+                -> console.log(undefined < 0); true
 
 VIDEO 9 - DATATYPES IN JAVASCRIPT =========================================================================================================
 
@@ -203,7 +203,7 @@ VIDEO 10 - STACK AND HEAP MEMORY ===============================================
 
                   Heap is used for non primitive datatypes i.e. objects, arrays, strings, etc. In Heap memory we have variable_1 and variable_2 which are stored in a memory and if any variable is pointing towards the other variable then it is not copying the variable value like in stack memory. It is simply pointing towards it. so, if one variables value is changed then the other variable's value will change too.
 
-                  ln1: variable_1 = 15 // example is taken as primitive but should be non-primitive.
+                  ln1: variable_1 = 15 example is taken as primitive but should be non-primitive.
                   ln2: varibale_2 = variable_1
                   ln3: variable_2 = 20
 
@@ -233,35 +233,35 @@ VIDEO 11 - STRINGS =============================================================
 
                 1) LENGTH (PROPERTY) ==> TO CHECK THE LENGTH OF THE STRING.
                     --> USAGE :
-                          gameName.length // OUTPUT : 5
+                          gameName.length OUTPUT : 5
 
                 2) TOUPPERCASE (METHOD) ==> TO CHANGE WHOLE STRING TO UPPERCASE || SAME GOES FOR TOLOWERCASE METHOD.
                     --> USAGE :
-                          gameName.toUpperCase() // OUTPUT : 'ASHISH'
+                          gameName.toUpperCase() OUTPUT : 'ASHISH'
 
                 3) CHARAT (METHOD) ==> IT IS USED TO CHECK AT THAT INDEX WHICH VALUE EXISTS.
                     --> USAGE :
-                          gameName.charAt(2); // OUTPUT : h
+                          gameName.charAt(2); OUTPUT : h
 
                 4) INDEXOF (METHOD) ==> IT IS USED TO CHECK THE INDEX WITH THE HELP OF VALUE.
                     --> USAGE :
-                          gameName.indexOf('a'); // OUTPUT : 0
+                          gameName.indexOf('a'); OUTPUT : 0
 
                 5) SUBSTRING (METHOD) ==> IT IS USED TO EXTRACT THE SUBSTRING FROM THE ORIGINAL STRING.
                                           IT TAKES 2 ARGUMENTS (START INDEX) AND (END INDEX)
                                           (START INDEX) MEANS THAT FROM WHICH INDEX TO START FROM
                                           (END INDEX) IS NOT EXACTLY INDEX ITS THE RANGE FOR HOW MANY CHARACTER TO STORE IN SUB STRING || ITS EXCLUSIVE.
                     --> USAGE :
-                          gameName.substring(0, 4); // OUTPUT : ashi
+                          gameName.substring(0, 4); OUTPUT : ashi
 
                 6) SLICE (METHOD) ==> IT IS SAME AS SUBSTRING THE ONLY DIFFERENCE IS THAT WE CAN GIVE NEGATIVE VALUES TOO.
                                       IT TAKE 2 ARGUMENTS JUST LIKE SUBSTRING.
                     --> USAGE :
-                          gameName.slice(-8, 4); // OUTPUT : shi
+                          gameName.slice(-8, 4); OUTPUT : shi
 
                 7) TRIM (METHOD) ==> IT IS USED TO TRIM DOWN THE WHITESPACES || TRIM HAS TRIM START AND END METHODS ALSO.
                     --> USAGE :
-                          gameName.trim(); // OUTPUT : IF THERE ARE ANY SPACES THEN IT WOULD JUST REMOVE THOSE EXTRA SPACES AND RETURN REST OF THE STRING
+                          gameName.trim(); OUTPUT : IF THERE ARE ANY SPACES THEN IT WOULD JUST REMOVE THOSE EXTRA SPACES AND RETURN REST OF THE STRING
 
                 8) REPLACE (METHOD) ==> IT IS USED TO REPLACE ANY CHARACTERS / SPECIAL CHARACTERS FROM STRING
                     --> USAGE :
@@ -269,19 +269,19 @@ VIDEO 11 - STRINGS =============================================================
 
                 9) INCLUDES (METHOD) ==> IT IS USED FOR CHECKING WHETHER THAT CHARACTER / SET OF CHARACTERS LIES IN THAT STRING OR NOT.
                     --> USAGE :
-                          gameName.include('ish'); // OUTPUT : TRUE
+                          gameName.include('ish'); OUTPUT : TRUE
 
                 10) SPLIT (METHOD) ==> IT IS USED TO SEPARATE STRING INTO AN ARRAY WITH THE HELP OF SOME COMMON CHARACTER.
                     --> USAGE :
-                          gameName.split('-') // OUTPUT : ['ashish', 'singh']
+                          gameName.split('-') OUTPUT : ['ashish', 'singh']
 
 VIDEO 12 - NUMBERS AND MATHS ====================================================================================================================
 
             -> WHILE USING NUMBERS DATAYPES IN JS WE CAN STORE NUMBERS DIRECTLY IN THE VARIABLE WITHOUT TELLING IT WHETHER ITS A NUMBER OR FLOATING POINT NUMBER, etc.
             -> WE CAN DECLARE AND INITIALISE NUMBERS IN A VARIABLE AS FOLLOWS
-                --> let num = 10; || let num = 10.01; // OUTPUT : 10, 10.01
+                --> let num = 10; || let num = 10.01; OUTPUT : 10, 10.01
             -> WE HAVE ANOTHER WAY of DECLARING NUMBERS IN JS ALSO. WHICH IS AS FOLLOWS
-                --> let num = new Number(value); || let num = new Number(100); // OUTPUT : [Number: 100]
+                --> let num = new Number(value); || let num = new Number(100); OUTPUT : [Number: 100]
 
                 EXAMPLE : const score = 400;
                           const balance = new Number(100)
@@ -292,43 +292,43 @@ VIDEO 12 - NUMBERS AND MATHS ===================================================
 
                 1) TOSTRING (METHOD) ==> THIS METHOD IS USED TO TURN ANY DATATYPE INTO STRING.
                     --> USAGE :
-                            console.log(balance); // OUTPUT : [Number: 100]
-                            balance.toString(); // OUTPUT : 100
+                            console.log(balance); OUTPUT : [Number: 100]
+                            balance.toString(); OUTPUT : 100
 
                 2) TOFIXED (METHOD) ==> THIS METHOD IS USED TO TAKE THE PRECISION VALUE.
                     --> USAGE :
-                            balance.toFixed(number); // if number = 2 || OUTPUT : 100.00
+                            balance.toFixed(number); if number = 2 || OUTPUT : 100.00
 
                 3) TOPRECISION (METHOD) ==> THIS METHOD ACCEPTS VALUE FROM 1 TO 21.
                     --> USAGE :
-                            balance.toPrecision(number from 1 to 21); // if balance is 123.8966 && if number = 3 || OUTPUT : 124
-                            balance.toPrecision(number from 1 to 21); // if balance is 123.8966 && if number = 4 || OUTPUT : 123.9
-                            balance.toPricision(number from 1 to 21); // if balance is 1123.8966 && if number = 3 || OUTPUT : 1.12e+3
+                            balance.toPrecision(number from 1 to 21); if balance is 123.8966 && if number = 3 || OUTPUT : 124
+                            balance.toPrecision(number from 1 to 21); if balance is 123.8966 && if number = 4 || OUTPUT : 123.9
+                            balance.toPricision(number from 1 to 21); if balance is 1123.8966 && if number = 3 || OUTPUT : 1.12e+3
 
                 4) TOLOCALSTRING (METHOD) ==> THIS IS THE METHOD WHICH CONVERTS NUMBER INTO CURRENCY FORMAT
                     --> USAGE :
                             INSTANCE :
                                 const hundreds = 1000000;
-                                console.log(hundreds.toLocaleString()); // OUTPUT : 1,000,000
+                                console.log(hundreds.toLocaleString()); OUTPUT : 1,000,000
                                 {TO CHANGE THE VALUE FORMAT FROM US TO INDIA WE NEED TO PASS AN ARGUMENT || THERE ARE MORE VALUES FOR ARGUMENTS}
-                                console.log(hundreds.toLocaleString('en-IN')); // OUTPUT : 10,00,000
+                                console.log(hundreds.toLocaleString('en-IN')); OUTPUT : 10,00,000
 
             THERE IS A MATH LIBRARY IN JS
 
                 1) ABSOLUTE {.abs()} ==> CONVERTS NEGATIVE VALUE TO POSITIVE VALUE
                     --> USAGE :
-                            Math.abs(-4); // OUTPUT : 4
+                            Math.abs(-4); OUTPUT : 4
 
                 2) ROUND {.round()} ==> IT ROUNDS OFF THE VALUE
                     --> USAGE :
-                            Math.round(4.3); // OUTPUT : 4
-                            Math.round(4.5); // OUTPUT : 5
+                            Math.round(4.3); OUTPUT : 4
+                            Math.round(4.5); OUTPUT : 5
 
                 3) CEIL & FLOOR {.ceil(), .floor()} ==> IT LETS US CONTROL THE VALUE OF WHICH VALUE WE WANT AFTER ROUNDING OFF
                                                         EITHER ITS CEILING VALUE (upper) OR FLOOR VALUE (lower)
                     --> USAGE :
-                            Math.ceil(4.3); // OUTPUT : 5 // THIS TAKES THE UPPER VALUE
-                            Math.floor(4.6); // OUTPUT : 4 // THIS TAKES THE LOWER VALUE
+                            Math.ceil(4.3); OUTPUT : 5 THIS TAKES THE UPPER VALUE
+                            Math.floor(4.6); OUTPUT : 4 THIS TAKES THE LOWER VALUE
 
                 4) SQUAREROOT {.sqrt()} ==> THIS FINDS OUT THE SQUARE ROOT OF ANY NUMBER
                 5) POWER {.pow()} ==> THIS IS TO FIND THE EXPONENTIAL VALUE OF THE NUMBER
@@ -336,10 +336,10 @@ VIDEO 12 - NUMBERS AND MATHS ===================================================
                 7) MAX {.max} ==> THIS FINDS THE MAXIMUM VALUE FROM LIST OF NUMBERS
                 8) RANDOM {.random} ==> THIS IS TO GET RANDOM VALUE FROM SPECIFIC RANGE -> (0-1)
                     --> USAGE:
-                            Math.random(); // 0.5867695... // EVERYTIME IT WILL GIVE DIFFERENT ANSWER BUT IN BETWEEN 0 TO 1
-                            Math.random()*10; // 1.5867695... // THIS IS GOING TO GIVE US DIFFERENT VALUE BUT IN BETWEEN 0 TO 10
-                            (Math.random()*10)+1; // 2.5867695... // THIS IS GOING TO GIVE US DIFFERENT VALUE BUT IN BETWEEN 1 TO 11
-                            (Math.Floor(Math.random()*10)+1); // 2 // THIS IS GOING TO GIVE US ROUNDED LOWER VALUE BETWEEN 1 TO 11
+                            Math.random(); 0.5867695... EVERYTIME IT WILL GIVE DIFFERENT ANSWER BUT IN BETWEEN 0 TO 1
+                            Math.random()*10; 1.5867695... THIS IS GOING TO GIVE US DIFFERENT VALUE BUT IN BETWEEN 0 TO 10
+                            (Math.random()*10)+1; 2.5867695... THIS IS GOING TO GIVE US DIFFERENT VALUE BUT IN BETWEEN 1 TO 11
+                            (Math.Floor(Math.random()*10)+1); 2 THIS IS GOING TO GIVE US ROUNDED LOWER VALUE BETWEEN 1 TO 11
 
                             => THERE IS A FORMULA <=
 
@@ -358,47 +358,47 @@ VIDEO 13 - DATE AND TIME =======================================================
             -> TO DECLARE DATE WE DO THE FOLLOWING
 
                 --> let myDate = new Date();
-                    console.log(myDate); // OUTPUT : 2023-03-01T12:03:00:900Z {THIS IS NOT AT ALL READABLE}
+                    console.log(myDate); OUTPUT : 2023-03-01T12:03:00:900Z {THIS IS NOT AT ALL READABLE}
                     => IF WE CONVERT THIS DATE IN STRING THEN WE WILL GET SOMETHING LITTLE READABLE
-                    console.log(myDate.toString()); // OUTPUT : WED MAR 01 2023 12:03:41 GMT+0000 (Coordinated Universal Time)
-                    console.log(myDate.toDateString()); // OUTPUT : Fri Sep 29 2023
-                    console.log(myDate.toISOString()); // OUTPUT : 2023-09-29T03:05:09.556Z
-                    console.log(myDate.toJSON()); // OUTPUT : 2023-09-29T03:05:09.556Z
-                    console.log(myDate.toLocaleDateString); // OUTPUT : [Function: toLocaleDateString]
-                    console.log(myDate.toLocaleString()); // OUTPUT : 9/29/2023, 8:36:39 AM
+                    console.log(myDate.toString()); OUTPUT : WED MAR 01 2023 12:03:41 GMT+0000 (Coordinated Universal Time)
+                    console.log(myDate.toDateString()); OUTPUT : Fri Sep 29 2023
+                    console.log(myDate.toISOString()); OUTPUT : 2023-09-29T03:05:09.556Z
+                    console.log(myDate.toJSON()); OUTPUT : 2023-09-29T03:05:09.556Z
+                    console.log(myDate.toLocaleDateString); OUTPUT : [Function: toLocaleDateString]
+                    console.log(myDate.toLocaleString()); OUTPUT : 9/29/2023, 8:36:39 AM
 
             -> DATE IS AN OBJECT IN JS.
             -> NOW IF WE DECLARE AN ARBITRARAY DATE WE CAN DO AS THE FOLLOWING
 
                 --> let myCreatedDate = new Date(2023, 0, 23);
-                    console.log(myCreatedDate); // OUTPUT : 2023-01-23T00:00:00.000Z
+                    console.log(myCreatedDate); OUTPUT : 2023-01-23T00:00:00.000Z
                     => IF WE CONVERT THIS INTO STRING WE WILL GET THE FOLLOWING OUTPUT
-                    console.log(myCreatedDate.toDateString()); // OUTPUT : Mon Jan 23 2023
+                    console.log(myCreatedDate.toDateString()); OUTPUT : Mon Jan 23 2023
 
                 --> let myCreatedDate = new Date(2023, 0, 23, 5, 3);
-                    console.log(myCreatedDate.toLocaleString()); // OUTPUT : 1/23/2023, 5:03:00 AM
+                    console.log(myCreatedDate.toLocaleString()); OUTPUT : 1/23/2023, 5:03:00 AM
 
                 {THIS IS DONE IF WE WANT DATE IN MM/DD/YYYY OR DD/MM/YYYY FORMAT}
 
                 --> let myCreatedDate2 = new Date("2023-01-14");
-                    console.log(myCreatedDate2.toLocaleString()); // OUTPUT : 1/14/2023, 5:30:00 AM
+                    console.log(myCreatedDate2.toLocaleString()); OUTPUT : 1/14/2023, 5:30:00 AM
 
                 --> let myCreatedDate3 = new Date("02-14-2023");
-                    console.log(myCreatedDate3.toLocaleString()); // OUTPUT : 2/14/2023, 12:00:00 AM
+                    console.log(myCreatedDate3.toLocaleString()); OUTPUT : 2/14/2023, 12:00:00 AM
 
                 {THERE ARE TIMESTAMPS TOO, THIS IS THE EXACT CURRENT TIME THAT IS ON THE CLOCK}
 
-                --> let myTimeStamp = Date.now(); || let myTimeStamp = new Date.now(); // CAN WE WRITTEN EITHER WAY.
-                    console.log(myTimeStamp); // OUTPUT : 1695956962495
-                    console.log(myCreatedDate.getTime()); // OUTPUT : 1674412200000
-                    console.log(Date.now()); // OUTPUT : 1695957290574
-                    console.log(Date.now()/1000); // OUTPUT : 1695957290.574
-                    console.log(Math.floor(Date.now()/1000)); // OUTPUT : 1695957290
+                --> let myTimeStamp = Date.now(); || let myTimeStamp = new Date.now(); CAN WE WRITTEN EITHER WAY.
+                    console.log(myTimeStamp); OUTPUT : 1695956962495
+                    console.log(myCreatedDate.getTime()); OUTPUT : 1674412200000
+                    console.log(Date.now()); OUTPUT : 1695957290574
+                    console.log(Date.now()/1000); OUTPUT : 1695957290.574
+                    console.log(Math.floor(Date.now()/1000)); OUTPUT : 1695957290
 
                 --> let newDate = new Date();
-                    console.log(newDate); // OUTPUT : 2023-09-29T13:56:15.204Z
-                    console.log(newDate.getMonth()); // OUTPUT : 8
-                    console.log(newDate.getDay()); // OUTPUT : 5
+                    console.log(newDate); OUTPUT : 2023-09-29T13:56:15.204Z
+                    console.log(newDate.getMonth()); OUTPUT : 8
+                    console.log(newDate.getDay()); OUTPUT : 5
 
                 --> newDate.toLocaleString('default', {
                         weekday : "long",
@@ -418,10 +418,10 @@ VIDEO 14 - ARRAYS ==============================================================
                     =>{ARRAY IS CONSIST OF INDEXES AND VALUES}
                     =>{INDEXES STARTS FORM 0, 1, 2, 3 and so on}
                     SO, IF WE WANT TO FIND THE VALUE FROM ARRAY WE NEED TO FIND IT VIA INDEX AS FOLLOWS
-                    myArr[0]; // OUTPUT : 1
-                    myArr[1]; // OUTPUT : 2
-                    myArr[4]; // OUTPUT : "Hi"
-                    myArr[6]; // OUTPUT : true
+                    myArr[0]; OUTPUT : 1
+                    myArr[1]; OUTPUT : 2
+                    myArr[4]; OUTPUT : "Hi"
+                    myArr[6]; OUTPUT : true
                 EXAMPLE 2:
                     const myHeros = ["Shaktiman", "naagraj"];
                     or
@@ -431,52 +431,52 @@ VIDEO 14 - ARRAYS ==============================================================
                 1) PUSH (METHOD) ==> THIS METHOD ADDS AN ELEMENT TO THE END OF THE ARRAY.
                     --> USAGE :
                             myArr2.push(6);
-                            console.log(myArr2); // OUTPUT : [1,2,3,4,5,6] {THIS METHOD CHANGES THE VALUE, AS IT IS A REFERNCE TO THAT ARRAY}
+                            console.log(myArr2); OUTPUT : [1,2,3,4,5,6] {THIS METHOD CHANGES THE VALUE, AS IT IS A REFERNCE TO THAT ARRAY}
 
                 2) POP (METHOD) ==> THIS METHOD REMOVES AN ELEMENT FROM THE END OF THE ARRAY.
                     --> USAGE :
                             myArr2.pop();
-                            console.log(myArr2); // OUTPUT : [1,2,3,4,5]
+                            console.log(myArr2); OUTPUT : [1,2,3,4,5]
 
                 3) UNSHIFT (METHOD) ==> THIS METHOD ADDS AN ELEMENT TO THE START OF THE ARRAY.
                     --> USAGE :
                             myArr2.unshift(0);
-                            console.log(myArr2); // OUTPUT : [0,1,2,3,4,5]
+                            console.log(myArr2); OUTPUT : [0,1,2,3,4,5]
 
                 4) SHIFT (METHOD) ==> THIS METHOD REMOVES AN ELEMENT FROM THE START OF THE ARRAY.
                     --> USAGE :
                             myArr2.shift();
-                            console.log(); // OUTPUT : [1,2,3,4,5]
+                            console.log(); OUTPUT : [1,2,3,4,5]
 
                 5) INCLUDES (METHOD) ==> THIS METHOD ONLY RETURN TRUE OR FALSE BASED ON WHETHER THAT ARRAY HAS THAT ELEMENT OR NOT.
                     --> USAGE :
-                            console.log(myArr2.includes(9)); // OUTPUT : false
+                            console.log(myArr2.includes(9)); OUTPUT : false
 
                 6) INDEXOF (METHOD) ==> THIS METHOD TELLS US THE INDEX AT WHICH THAT VALUE EXIST.
                     --> USAGE :
-                            console.log(myArr2.indexOf(3)); // OUTPUT : 2
+                            console.log(myArr2.indexOf(3)); OUTPUT : 2
                             if
-                            console.log(myArr2.indexOf(9)); // OUTPUT : -1 {BECAUSE THIS VALUE DOES NOT EXIST IN THE INDEX RANGE SO THAT IS WHY IT GIVES US THE INDEX -1}
+                            console.log(myArr2.indexOf(9)); OUTPUT : -1 {BECAUSE THIS VALUE DOES NOT EXIST IN THE INDEX RANGE SO THAT IS WHY IT GIVES US THE INDEX -1}
 
                 7) JOIN (METHOD) ==> THIS METHOD LETS US CONVERT ARRAY INTO STRING AND LETS US JOIN TWO ARRAY INTO STRING
                     --> USAGE :
                             cosnt newArr = myArr2.join();
-                            console.log(myArr2); // OUTPUT : [1,2,3,4,5]
-                            console.log(newArr); // OUTPUT : 0,1,2,3,4,5
-                            console.log(typeOf newArr); // OUTPUT : string
+                            console.log(myArr2); OUTPUT : [1,2,3,4,5]
+                            console.log(newArr); OUTPUT : 0,1,2,3,4,5
+                            console.log(typeOf newArr); OUTPUT : string
 
                 8) SLICE (METHOD) ==> THIS METHOD LET US SLICE THE ARRAY FROM CERTAIN INDEX TO THE RANGE WE HAVE GIVEN. || IT DOESNOT MANIPULATE THE ORIGINAL ARRAY. AS IT MAKES THE COPY THE ARRAY. || IT RETURN A COPY OF A SECTION OF AN ARRAY.
                     --> USAGE :
-                            console.log("A ", myArr2); // OUTPUT : A [1,2,3,4,5]
-                            const myn1 = myArr2.slice(1,3); // SLICE DOESNOT MANIPULATE THE ORIGINAL ARRAY
-                            console.log(myn1); // OUTPUT : [2,3]
-                            console.log("B ", myArr2); // OUTPUT : B [1,2,3,4,5]
+                            console.log("A ", myArr2); OUTPUT : A [1,2,3,4,5]
+                            const myn1 = myArr2.slice(1,3); SLICE DOESNOT MANIPULATE THE ORIGINAL ARRAY
+                            console.log(myn1); OUTPUT : [2,3]
+                            console.log("B ", myArr2); OUTPUT : B [1,2,3,4,5]
 
                 9) SPLICE (METHOD) ==> THIS METHOD LET US DO THE SAME THING AS SLICE. || IT MANIPULATES THE ORIGINAL ARRAY AS IT A REFENCE TO THE ORIGINAL ARRAY
                     --> USAGE :
-                            const myn2 = myArr.splice(1,3); // SPLICE MANIPULATE THE ORIGINAL ARRAY
-                            console.log(myn2); // OUTPUT : [2,3,4] (RANGE IS INCLUSIVE)
-                            console.log("C ", myArr); // OUTPUT : C [1,5];
+                            const myn2 = myArr.splice(1,3); SPLICE MANIPULATE THE ORIGINAL ARRAY
+                            console.log(myn2); OUTPUT : [2,3,4] (RANGE IS INCLUSIVE)
+                            console.log("C ", myArr); OUTPUT : C [1,5];
 
 VIDEO 15 - MORE ON ARRAY ====================================================================================================================
 
@@ -484,14 +484,14 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                           const dcHeros = ["Superman", "Flash", "Batman"];
 
                             --> marvelHeros.push(dcHeros);
-                            // ABOVE LINE IS PUSHING 'dcHeros' ARRAY AS AN ELEMENT IN THE FIRST ARRAY i.e. 'marvelHeros'. AS PUSH METHOD ALWAYS ADD TO THE LAST ELEMENT OF THE ARRAY.
+                            ABOVE LINE IS PUSHING 'dcHeros' ARRAY AS AN ELEMENT IN THE FIRST ARRAY i.e. 'marvelHeros'. AS PUSH METHOD ALWAYS ADD TO THE LAST ELEMENT OF THE ARRAY.
 
-                            console.log(marvelHeros); // OUTPUT: ["Thor", "Ironman", "Spiderman", ["Superman", "Flash", "Batman"]]
-                            console.log(marvelHeros[3][1]); // OUTPUT : Flash
+                            console.log(marvelHeros); OUTPUT: ["Thor", "Ironman", "Spiderman", ["Superman", "Flash", "Batman"]]
+                            console.log(marvelHeros[3][1]); OUTPUT : Flash
 
                             10) CONCATE (METHOD) ==> THIS OPERATOR LET US ADD TWO OR MORE ARRAY. IT WORKS ON STRINGS, ARRAYS etc.
-                            const allHeros = marvelHeros.concat(dcHeros); // THIS METHOD RETURN NEW ARRAY BY COMBINING THEM INTO ONE ARRAY.
-                            console.log(allHeros); // ["Thor", "Ironman", "Spiderman", "Superman", "Flash", "Batman"]
+                            const allHeros = marvelHeros.concat(dcHeros); THIS METHOD RETURN NEW ARRAY BY COMBINING THEM INTO ONE ARRAY.
+                            console.log(allHeros); ["Thor", "Ironman", "Spiderman", "Superman", "Flash", "Batman"]
 
 
 
@@ -500,26 +500,26 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                             11) SPREAD OPERATOR ==> THIS OPERATOR IS USED TO SPREAD ALL THE VALUES IN AN ARRAY AND LET US CONCATINATE 2 ARRAYS
 
                                 --> USAGE : {USING SPREAD OPERATOR FOR ABOVE CONCATINATING TASK}
-                                            const allNewHeros = [...marvelHeros, ...dcHeros]; // DOES THE SAME WORK AS CONCAT.
-                                            console.log(allNewHeros); // ["Thor", "Ironman", "Spiderman", "Superman", "Flash", "Batman"]
+                                            const allNewHeros = [...marvelHeros, ...dcHeros]; DOES THE SAME WORK AS CONCAT.
+                                            console.log(allNewHeros); ["Thor", "Ironman", "Spiderman", "Superman", "Flash", "Batman"]
 
             INSTANCE 2 ->   const anotherArray = [1,2,3,[4,5,6],7,[6,7,[4,5]]];
 
                             12) FLAT (METHOD) ==> THIS METHOD IS USED TO SPREAD ALL THE ELEMENTS WITH THE HELP OF ARGUMENT IN WHICH WE CAN GIVE NUMBER WHICH TELLS US HOW MANY SUB ARRAYS ARE IN THE ARRAY. IF WE WANT WE CAN JUST GIVE 'Infinity' AND THIS METHOD WILL COUNT ALL THE SUB ARRAYS AND SPREAD THEM ACCORDINGLY.
 
-                            const usableAnotherArray = anotherArray.flat(Infinity); // THIS COUNTS AND SPREAD ALL THE ARRAYS
+                            const usableAnotherArray = anotherArray.flat(Infinity); THIS COUNTS AND SPREAD ALL THE ARRAYS
                             console.log(usableAnotherArray); [1,2,3,4,5,6,7,6,7,4,5];
 
             13) Array.isArray('value') ==> THIS METHOD RETURN TRUE OR FALSE BASED ON WHAT THE VALUE IS IF ITS ARRAY ITS GIVING IT TRUE AND IF ITS NOT AN ARRAY ITS GIVING FLASE
                 --> USAGE :
-                        console.log(Array.isArray("Ashish")); // OUTPUT : false
+                        console.log(Array.isArray("Ashish")); OUTPUT : false
 
             14) Array.from('value') ==> THIS METHOD RETURN THE ARRAY OF ANY DATATYPE. (Strings, numbers, objects etc)
                 --> USAGE :
-                        console.log(Array.from("Ashish")); // OUTPUT : ['A','s','h','i','s','h']
+                        console.log(Array.from("Ashish")); OUTPUT : ['A','s','h','i','s','h']
 
-                        console.log(Array.from(1234567890)); // THIS GIVES THE EMPTY ARRAY AS AN OUTPUT TOO.
-                        console.log(Array.from({name : "Ashish"})); // THIS GIVES THE EMPTY ARRAY AS AN OUTPUT.
+                        console.log(Array.from(1234567890)); THIS GIVES THE EMPTY ARRAY AS AN OUTPUT TOO.
+                        console.log(Array.from({name : "Ashish"})); THIS GIVES THE EMPTY ARRAY AS AN OUTPUT.
 
             15) Array.of(datatype1, datatype2, .... more) ==> THIS METHOD TAKES THE DIFFERENT DIFFERENT DATYPES AND ITS VALUES AND ADD IT TO A COMMON ARRAY
                 --> USAGE :
@@ -528,12 +528,38 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                         let score3 = 300;
                         let score4 = [400, 500, 600];
 
-                        console.log(Array.of(score1, score2, score3, ...score4)); // OUTPUT : [100, 200, 300, 400, 500, 600]
+                        console.log(Array.of(score1, score2, score3, ...score4)); OUTPUT : [100, 200, 300, 400, 500, 600]
                         ABOVE CONSOLE LOG IS USING Array.of() METHOD TO MERGE ALL THE VALUES AND AND ARRAY WE USED SPREAD OPERATOR AND MADE A NEW ARRAY
 
 VIDEO 16 - OBJECTS ===============================================================================================================================
 
-            ->
+            -> THERE ARE 2 WAYS TO DECLARE OBJECTS
+                --> LITERAL & CONSTRUCTOR
+
+                        IF OBJECT IS MADE WITH LITERAL THEN IT WONT BE A SINGLETON OBJECT
+                        BUT IF IT IS MADE WITH CONSTRUCTOR THEN IT WILL BE A SINGLETON OBJECT
+                        Object.create (CUNSTROCTOR METHOD OF CREATING OBJECTS)
+
+                --> SINGLETON - WHATEVER OBJECT WE CREATE WITH THE HELP OF CONSTRUCTURE ARE CALLED SINGLETON.
+
+                1) OBJECT LITERALS
+
+                    COMMON SYNTAX :
+
+                        const/let/var varaible_name = { key1:'value1', key2:'value2', key3:'value3', ...... }
+
+                    const jsUser = {
+
+                        name : "Ashish", // KEY IS A STRING
+                        "Full Name" : "Ashish Singh",
+                        [mySymbol] : "mykey1", // mySymbol is a string if we are checking typeof this key, if we have to use mySymbol as a Symbol Data Object then we have to use [] these symbols.
+                        age : 18,
+                        location : "Delhi",
+                        email : "ashish@gmail.com",
+                        isLoggedIn : false,
+                        lastLoginDays : ["Monday", "Saturday"]
+
+                    }
 
 
 
