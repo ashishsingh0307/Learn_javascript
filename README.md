@@ -489,8 +489,27 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                             console.log(marvelHeros); // OUTPUT: ["Thor", "Ironman", "Spiderman", ["Superman", "Flash", "Batman"]]
                             console.log(marvelHeros[3][1]); // OUTPUT : Flash
 
+                            10) CONCATE (METHOD) ==> THIS OPERATOR LET US ADD TWO OR MORE ARRAY. IT WORKS ON STRINGS, ARRAYS etc.
                             const allHeros = marvelHeros.concat(dcHeros); // THIS METHOD RETURN NEW ARRAY BY COMBINING THEM INTO ONE ARRAY.
-                            console.log(allHeros);
+                            console.log(allHeros); // ["Thor", "Ironman", "Spiderman", "Superman", "Flash", "Batman"]
+
+
+
+                            NOTE : PUSH CHNAGES THE ORIGINAL VALUE BUT CONCATE RETURN THE NEW VALUE THAT CAN BE STORED.
+
+                            11) SPREAD OPERATOR ==> THIS OPERATOR IS USED TO SPREAD ALL THE VALUES IN AN ARRAY AND LET US CONCATINATE 2 ARRAYS
+
+                                --> USAGE : {USING SPREAD OPERATOR FOR ABOVE CONCATINATING TASK}
+                                            const allNewHeros = [...marvelHeros, ...dcHeros]; // DOES THE SAME WORK AS CONCAT.
+                                            console.log(allNewHeros); // ["Thor", "Ironman", "Spiderman", "Superman", "Flash", "Batman"]
+
+            INSTANCE 2 ->   const anotherArray = [1,2,3,[4,5,6],7,[6,7,[4,5]]];
+
+                            12) FLAT (METHOD) ==> THIS METHOD IS USED TO SPREAD ALL THE ELEMENTS WITH THE HELP OF ARGUMENT IN WHICH WE CAN GIVE NUMBER WHICH TELLS US HOW MANY SUB ARRAYS ARE IN THE ARRAY. IF WE WANT WE CAN JUST GIVE 'Infinity' AND THIS METHOD WILL COUNT ALL THE SUB ARRAYS AND SPREAD THEM ACCORDINGLY.
+
+                            const usableAnotherArray = anotherArray.flat(Infinity); // THIS COUNTS AND SPREAD ALL THE ARRAYS
+                            console.log(usableAnotherArray); [1,2,3,4,5,6,7,6,7,4,5];
+
 
 
 NOTE : () => Paranthesis.

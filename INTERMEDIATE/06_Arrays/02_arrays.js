@@ -9,7 +9,7 @@ const dcHeros = ["Superman", "Flash", "Batman"];
 // const allHeros = marvelHeros.concat(dcHeros); // THIS METHOD RETURN NEW ARRAY BY COMBINING THEM INTO ONE ARRAY.
 // console.log(allHeros);
 
-// {USING SPREAD OPERATOR FOR ABOVE CAONCATINATING TASK}
+// {USING SPREAD OPERATOR FOR ABOVE CONCATINATING TASK}
 const allNewHeros = [...marvelHeros, ...dcHeros]; // DOES THE SAME WORK AS CONCAT.
 console.log(allNewHeros);
 
