@@ -510,7 +510,18 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                             const usableAnotherArray = anotherArray.flat(Infinity); // THIS COUNTS AND SPREAD ALL THE ARRAYS
                             console.log(usableAnotherArray); [1,2,3,4,5,6,7,6,7,4,5];
 
+            13) Array.isArray('value') ==> THIS METHOD RETURN TRUE OR FALSE BASED ON WHAT THE VALUE IS IF ITS ARRAY ITS GIVING IT TRUE AND IF ITS NOT AN ARRAY ITS GIVING FLASE
+                --> USAGE :
+                        console.log(Array.isArray("Ashish")); // OUTPUT : false
 
+            14) Array.from('value') ==> THIS METHOD RETURN THE ARRAY OF ANY DATATYPE. (Strings, numbers, objects etc)
+                --> USAGE :
+                        console.log(Array.from("Ashish")); // OUTPUT : ['A','s','h','i','s','h']
+
+                        console.log(Array.from(1234567890)); // THIS GIVES THE EMPTY ARRAY AS AN OUTPUT TOO.
+                        console.log(Array.from({name : "Ashish"})); // THIS GIVES THE EMPTY ARRAY AS AN OUTPUT.
+
+            15)
 
 NOTE : () => Paranthesis.
        [] => Brackets.
