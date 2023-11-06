@@ -478,12 +478,34 @@ VIDEO 14 - ARRAYS ==============================================================
                             console.log(myn2); // OUTPUT : [2,3,4] (RANGE IS INCLUSIVE)
                             console.log("C ", myArr); // OUTPUT : C [1,5];
 
+VIDEO 15 - MORE ON ARRAY ====================================================================================================================
 
+            INSTANCE 1 -> const marvelHeros = ["Thor", "Ironman", "Spiderman"];
+                          const dcHeros = ["Superman", "Flash", "Batman"];
+
+                            --> marvelHeros.push(dcHeros);
+                            // ABOVE LINE IS PUSHING 'dcHeros' ARRAY AS AN ELEMENT IN THE FIRST ARRAY i.e. 'marvelHeros'. AS PUSH METHOD ALWAYS ADD TO THE LAST ELEMENT OF THE ARRAY.
+
+                            console.log(marvelHeros); // OUTPUT: ["Thor", "Ironman", "Spiderman", ["Superman", "Flash", "Batman"]]
+                            console.log(marvelHeros[3][1]); // OUTPUT : Flash
+
+                            const allHeros = marvelHeros.concat(dcHeros); // THIS METHOD RETURN NEW ARRAY BY COMBINING THEM INTO ONE ARRAY.
+                            console.log(allHeros);
 
 
 NOTE : () => Paranthesis.
        [] => Brackets.
        {} => Braces.
+
+
+
+
+
+
+
+
+
+
 
 
 video 15
