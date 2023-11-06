@@ -521,7 +521,25 @@ VIDEO 15 - MORE ON ARRAY =======================================================
                         console.log(Array.from(1234567890)); // THIS GIVES THE EMPTY ARRAY AS AN OUTPUT TOO.
                         console.log(Array.from({name : "Ashish"})); // THIS GIVES THE EMPTY ARRAY AS AN OUTPUT.
 
-            15)
+            15) Array.of(datatype1, datatype2, .... more) ==> THIS METHOD TAKES THE DIFFERENT DIFFERENT DATYPES AND ITS VALUES AND ADD IT TO A COMMON ARRAY
+                --> USAGE :
+                        let score1 = 100;
+                        let score2 = 200;
+                        let score3 = 300;
+                        let score4 = [400, 500, 600];
+
+                        console.log(Array.of(score1, score2, score3, ...score4)); // OUTPUT : [100, 200, 300, 400, 500, 600]
+                        ABOVE CONSOLE LOG IS USING Array.of() METHOD TO MERGE ALL THE VALUES AND AND ARRAY WE USED SPREAD OPERATOR AND MADE A NEW ARRAY
+
+
+
+
+
+
+
+
+
+
 
 NOTE : () => Paranthesis.
        [] => Brackets.
