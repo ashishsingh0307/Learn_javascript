@@ -711,4 +711,4 @@ NOTE : () => Paranthesis.
 
 
 
-video 17 : 6:29
+video 17 : 14:02
