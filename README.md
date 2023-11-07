@@ -622,6 +622,17 @@ VIDEO 17 - MORE ON OBJECTS =====================================================
 
                     {WE ASSIGNED NEW KEY:VALUE PAIR TO THE ABOVE OBJECT NAMED tinderUser}
 
+                MORE OBJECT METHODS
+
+                    console.log("This is tinder user object: ", tinderUser); // OUTPUT :
+
+                    console.log("These are the keys for Tinderuser object : ", Object.keys(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
+                    console.log("These are the Values for Tinderuser object : ", Object.values(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
+                    console.log("These are the Entries for Tinderuser object : ", Object.entries(tinderUser)); // ALL THE KEYS AND VALUE RETURN IN A MULTIDIMENTIONAL ARRAY.
+
+                    console.log(tinderUser.hasOwnProperty('isLoggedIn')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
+                    console.log(tinderUser.hasOwnProperty('isLogged')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
+
             -> INSTANCE 2
 
                 const regularUser = {
@@ -655,6 +666,30 @@ VIDEO 17 - MORE ON OBJECTS =====================================================
                     3: "c",
                     4: "d"
                 }
+
+                const object3 = { object1, object2 };
+                // OUTPUT :
+                {
+                    object1: { '1': 'a', '2': 'b', '3': 'c', '4': 'd' },
+                    object2: { '3': 'c', '4': 'd' }
+                }
+                { THIS RETURNS 2 OBJECTS INSIDE THE OBJECT || ABOVE SITUATION IS PROBLEMATIC }
+
+                const object4 = { ...object1, ...object2 };
+                // OUTPUT : { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+                {THIS IS THE SPREAD OPERATOR MERGING THAT IS USED ALOT}
+
+                const object5 = Object.assign(object1, object2);
+                // OUTPUT : { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+                {THIS MEANS THAT OBJECT2 IS MERGING INTO OBJECT1}
+
+                const object6 = Object.assign({}, object1, object2);
+                // OUTPUT : { '1': 'a', '2': 'b', '3': 'c', '4': 'd' }
+                {THIS MEANS THAT OBJECT1 AND OBJECT2 GOT COMBINED INTO A NEW OBJECT {} ||
+                 THIS CHANGES THE EMPTY OBJECT ON LINE 674 ||
+                 IF WE DONT GIVE EMPTY ARRAY THEN IT WILL MERGE INTO THE FIRST OBJECT THAT IS GIVEN IN THE ASSIGN FUNCTION ||
+                 FIRST OBJECT IN ASSIGN FUNCTION IS ALWAYS A TARGET AND REST ARE SOURCE,
+                 SO IF WE GIVE EMPTY OBJECT FIRST THEN IT WILL BECOME TARGET AND REST BECOMES SOURCE, THAT WILL BE MERGED IN TAREGT OBJECT}
 
 
 
