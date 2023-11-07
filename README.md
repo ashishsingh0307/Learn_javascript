@@ -642,6 +642,19 @@ VIDEO 17 - MORE ON OBJECTS =====================================================
                 --> console.log(regularUser.fullName?.userFullName.FirstName) // OUTPUT : ASHISH || OUTPUT IS SAME
                     ---> {BUT IN ABOVE LINE IF 'fullName' KEY WAS NOT PRESENT IN 'regularUser' OBJECT THEN ALSO OUT CODE WOULD HAVE RUN BECASUE OF OPTIONAL CHAINING METHOD}
 
+            -> INSTANCE 3
+
+                {MERGING OBJECTS}
+
+                const object1 = {
+                    1: "a",
+                    2: "b"
+                }
+
+                const object2 = {
+                    3: "c",
+                    4: "d"
+                }
 
 
 
