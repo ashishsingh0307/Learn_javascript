@@ -609,7 +609,38 @@ VIDEO 16 - OBJECTS =============================================================
 
 VIDEO 17 - MORE ON OBJECTS ==================================================================================================================
 
-            ->
+            ->  INSTANCE 1
+
+                const tinderUser = new Object(); // OUTPUT : {} || THIS IS SINGLETON OBJECT
+                const tinderUser = {}; // OUTPUT : {} || OUTPUT SAME AS ABOVE BUT THIS IS NON SINGLETON OBJECT / LIETRAL OBJECT
+
+                CONTINUING WITH LINE 613 :
+
+                    tinderUser.id = "123abc";
+                    tinderUser.name = "Sam";
+                    tinderUser.isLoggedIn = false;
+
+                    {WE ASSIGNED NEW KEY:VALUE PAIR TO THE ABOVE OBJECT NAMED tinderUser}
+
+            -> INSTANCE 2
+
+                const regularUser = {
+                    email : "sam@gmail.com",
+                    fullName : {
+                        userFullName: {
+                            firstName : "Ashish",
+                            lastName : "Singh"
+                        }
+                    }
+                }
+
+                {ACCESSING ABOVE OBJECTS VALUE}
+                --> console.log(regualrUser.fullName.userFullName.firstName) // OUTPUT : Ashish
+                --> console.log(regualrUser.fullName.userFullName.lastName) // OUTPUT : Singh
+
+                {OPTIONAL CHAINING ==> THIS METHOD IS USED TO PROTECT AGAINT THE ERROR IS ONE OBJECT KEY IS NOT PRESENT FOR EXAMPLE}
+                --> console.log(regularUser.fullName?.userFullName.FirstName) // OUTPUT : ASHISH || OUTPUT IS SAME
+                    ---> {BUT IN ABOVE LINE IF 'fullName' KEY WAS NOT PRESENT IN 'regularUser' OBJECT THEN ALSO OUT CODE WOULD HAVE RUN BECASUE OF OPTIONAL CHAINING METHOD}
 
 
 

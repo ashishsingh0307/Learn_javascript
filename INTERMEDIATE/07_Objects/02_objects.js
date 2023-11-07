@@ -1,5 +1,5 @@
 const tinderUser = new Object(); // THIS IS SINGLETON OBJECT
-// const tinderUser1 = {}; // OUTPUT SAME AS ABOVE BUT THIS IS NON SINGLETON OBJECT
+// const tinderUser1 = {}; // OUTPUT SAME AS ABOVE BUT THIS IS NON SINGLETON OBJECT / LIETRAL OBJECT
 
 tinderUser.id = "123abc";
 tinderUser.name = "Sam";
