@@ -568,22 +568,23 @@ VIDEO 16 - OBJECTS =============================================================
 
                     }
 
-                    console.log(jsUser.email); // OUTPUT : ashish@gmail.com
-                    console.log(jsUser["email"]); // OUTPUT : ashish@gmail.com
-                    {ABOVE 2 ARE THE WAYS TO ACCESS THE OBJECT. WE USE '.email' and '["email"]'. BUT IF WE TAKE A LOOK AT LINE 561 }
-                    console.log(jsUser["Full Name"]); // OUTPUT : Ashish Singh
-                    console.log(jsUser[mySymbol]); // TO ACCESS A SYMBOL WE DO NOT NEED TO MAKE IT A STRING WE CAN DIRECTLY ACCESS THE SYMBOL AS WE DID IT IN OBJECT. || OUTPUT : mykey1
-                    console.log(typeof jsUser[mySymbol]); // OUTPUT : string
+                    ==> console.log(jsUser.email); // OUTPUT : ashish@gmail.com
+                    ==> console.log(jsUser["email"]); // OUTPUT : ashish@gmail.com
+                    {ABOVE 2 ARE THE WAYS TO ACCESS THE OBJECT. WE USE '.email' and '["email"]'. BUT IF WE TAKE A LOOK AT LINE 561, WE DONT HAVE ANYWAY TO ACCESS THAT VALUE IF WE ONLY USE DOT METHOD TO ACCESS OBJECTS VALUE. THAT IS WHY WE NEED TO KNOW BOTH METHODS TO ACCESS OBJECTS VALUE. IN LINE 574 WE USED ANOTHER METHOD OF ACCESSING OBJECT'S VALUE}
+                    ==> console.log(jsUser["Full Name"]); // OUTPUT : Ashish Singh
 
-                    jsUser.email = "ashish041@gmail.com"; // jsUser OBJECTS email KEY'S VALUE WILL BE CHNAGED FROM 'ashish@gmail.com' TO 'ashish041@gmail.com'
-                    console.log(jsUser); // OUTPUT : RETURN AN OBJECT WITH EMAIL VALUE CAHNGED TO 'ashish041@gmail.com'
+                    ==> console.log(jsUser[mySymbol]); // TO ACCESS A SYMBOL WE DO NOT NEED TO MAKE IT A STRING WE CAN DIRECTLY ACCESS THE SYMBOL AS WE DID IT IN OBJECT. || OUTPUT : mykey1
+                    ==> console.log(typeof jsUser[mySymbol]); // OUTPUT : string
 
-                    jsUser["email"] = "singh041@gmail.com"; // jsUser OBJECTS email KEY'S VALUE WILL BE CHNAGED FROM 'ashish@gmail.com' TO 'singh041@gmail.com'
-                    console.log(jsUser); // OUTPUT : RETURN AN OBJECT WITH EMAIL VALUE CAHNGED TO 'singh041@gmail.com'
+                    ==> jsUser.email = "ashish041@gmail.com"; // jsUser OBJECTS email KEY'S VALUE WILL BE CHNAGED FROM 'ashish@gmail.com' TO 'ashish041@gmail.com'
+                    ==> console.log(jsUser); // OUTPUT : RETURN AN OBJECT WITH EMAIL VALUE CAHNGED TO 'ashish041@gmail.com'
 
-                    Object.freeze(jsUser); // THIS IS TO FREEZE A OBJECT SO THAT IT'S VALUE CAN'T BE CHANGED.
-                    jsUser["isLoggedIn"] = true; // THIS WILL NOT BE WORKING BECAUSE OF ABOVE FREEZE FUNCTION OF OBJECT.
-                    console.log(jsUser); // IF WE LEAVE OBJECT.FREEZE AS IS THEN NOTHING WILL BE CHNAGED IN THE OBJECT BUT IF WE REMOVE OBJECT.FREEZE THEN IT WILL BE WORKING AGAIN.
+                    ==> jsUser["email"] = "singh041@gmail.com"; // jsUser OBJECTS email KEY'S VALUE WILL BE CHNAGED FROM 'ashish@gmail.com' TO 'singh041@gmail.com'
+                    ==> console.log(jsUser); // OUTPUT : RETURN AN OBJECT WITH EMAIL VALUE CAHNGED TO 'singh041@gmail.com'
+
+                    ==> Object.freeze(jsUser); // THIS IS TO FREEZE A OBJECT SO THAT IT'S VALUE CAN'T BE CHANGED.
+                    ==> jsUser["isLoggedIn"] = true; // THIS WILL NOT BE WORKING BECAUSE OF ABOVE FREEZE FUNCTION OF OBJECT.
+                    ==> console.log(jsUser); // IF WE LEAVE OBJECT.FREEZE AS IS THEN NOTHING WILL BE CHNAGED IN THE OBJECT BUT IF WE REMOVE OBJECT.FREEZE THEN IT WILL BE WORKING AGAIN.
 
 
 
