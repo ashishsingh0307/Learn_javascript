@@ -626,12 +626,25 @@ VIDEO 17 - MORE ON OBJECTS =====================================================
 
                     console.log("This is tinder user object: ", tinderUser); // OUTPUT :
 
-                    console.log("These are the keys for Tinderuser object : ", Object.keys(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
-                    console.log("These are the Values for Tinderuser object : ", Object.values(tinderUser)); // ALL THE KEYS RETURNED IN AN ARRAY.
-                    console.log("These are the Entries for Tinderuser object : ", Object.entries(tinderUser)); // ALL THE KEYS AND VALUE RETURN IN A MULTIDIMENTIONAL ARRAY.
+                    console.log("These are the keys for Tinderuser object : ", Object.keys(tinderUser));
+                    // OUTPUT : ['id', 'name', 'isLoggedIn']
+                    {ALL THE KEYS RETURNED IN AN ARRAY. WE CAN USE LOOP TO ACCESS EACH KEY}
 
-                    console.log(tinderUser.hasOwnProperty('isLoggedIn')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
-                    console.log(tinderUser.hasOwnProperty('isLogged')); // RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.
+                    console.log("These are the Values for Tinderuser object : ", Object.values(tinderUser));
+                    // OUTPUT : ['123abc', 'Sam', false]
+                    {ALL THE VALUES RETURNED IN AN ARRAY. WE CAN USE LOOP TO ACCESS EACH VALUE}
+
+                    console.log("These are the Entries for Tinderuser object : ", Object.entries(tinderUser));
+                    // OUTPUT : [['id', '123abc'], ['name', 'Sam'], ['isLoggedIn', 'false']]
+                    {ALL THE KEYS AND VALUE RETURN IN A ARRAY WITHIN AN ARRAY. KEY,VALUE PAIR RETURNED IN AFORM OF ARRAY}
+
+                    console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+                    // OUTPUT : true
+                    {RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.}
+
+                    console.log(tinderUser.hasOwnProperty('isLogged'));
+                    // OUPUT : false
+                    {RETURNS BOOLEAN VALUE IF THAT PROPERTY IS FOUND/NOT FOUND IN THE OBJECT.}
 
             -> INSTANCE 2
 
