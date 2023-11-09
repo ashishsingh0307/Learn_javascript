@@ -904,6 +904,9 @@ VIDEO 19 - FUNCTIONS
                     console.log(loginUserMessage1("Ashish")); // OUTPUT : Ashish Just Logged In
                     }
 
+VIDEO 20 - MORE ABOUT FUNCTION
+
+            ->
 
 
 
