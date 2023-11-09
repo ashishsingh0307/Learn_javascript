@@ -815,6 +815,30 @@ VIDEO 18 - DESTRUCTURING OF OBJECTS
 
 VIDEO 19 - FUNCTIONS
 
+            FUNCTION IS A PACKAGE WHICH HOLDS SOME CODE IN IT.
+
+            -> INSTANCE 1
+
+                    function sayMyName(){
+                        console.log("A");
+                        console.log("S");
+                        console.log("H");
+                        console.log("I");
+                        console.log("S");
+                        console.log("H");
+                    }
+
+                    sayMyName -> Reference || THIS IS A REFERENCE TO THAT FUNCTION
+                    sayMyName() -> Execution || THIS WILL EXECUTE THE FUNCTION AND CODE INSIDE THAT FUNCTION
+                    sayMyName(); // OUTPUT : A
+                                             S
+                                             H
+                                             I
+                                             S
+                                             H
+
+
+
 
 
 
