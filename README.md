@@ -815,7 +815,11 @@ VIDEO 18 - DESTRUCTURING OF OBJECTS
 
 VIDEO 19 - FUNCTIONS
 
-            FUNCTION IS A PACKAGE WHICH HOLDS SOME CODE IN IT.
+            FUNCTION IS A PACKAGE WHICH HOLDS SOME CODE IN IT. (NAMING CONVENTION / NOMANCLATURE)
+
+            PARAMETER V/S ARGUMENTS
+            ==> WHEN WE DEFINE A FUNCTION WE PASS PARAMETERS
+            ==> WHEN WE CALL A FUNCTION WE PASS ARGUMENTS.
 
             -> INSTANCE 1
 
@@ -837,7 +841,68 @@ VIDEO 19 - FUNCTIONS
                                              S
                                              H
 
+            -> INSTANCE 2
 
+                    function addTwoNumbers(number1, number2){
+                        console.log(number1 + number2);
+                    }
+
+                    addTwoNumbers(); // OUTPUT WILL BE NaN BECAUSE WE NEED TO GIVE 2 ARGUMENTS AS WE PASSED 2 PARAMETERS IN THE FUNCTION addTwoNumbers()
+                    addTwoNumbers(3, 4); // OUTPUT IS 7.
+                    addTwoNumbers(3, "4"); // OUTPUT WILL BE 34 AS JS CONVERTS BOTH THE ARGUMENTS INTO STRING AND CONCATINATE BOTH. IT IS HAPPENIGN BECAUSE OF TYPE CONVERSION
+                    addTwoNumbers(3, "a"); // OUTPUT WILL BE 3a.
+
+                    const result = addTwoNumbers(4, 7);
+                    console.log("result : ", result); // IT IS BECAUSE OUR FUNCTION IS NOT RETURNING ANYTHING TO BE STORED.
+
+            -> INSTANCNE 3
+
+                    function sum(number1, number2){
+                    let answer = number1 + number2; // THIS ANSWER'S VARIABLE SCOPE IS LIMITED TO THE FUNCTION'S SCOPE
+                    return answer;
+                    console.log("Ashish");
+                    } // AFTER A RETURN STATEMENT NOTHING IS GOING TO EXECUTE IN A FUNCTION. RETURN KEYWORD IS KIND OF A WAY TO TELL A FUNCTION TO STOP ITS PROCESS.
+
+                    const answer = sum(3, 5); // THE 'ANSWER VRIABLE' IS OUTSIDE OF THE sum() FUNCTION.
+                    console.log("result1 : ", answer);
+                    // WHEN WE CONSOLE LOG ANYTHING WE GET ONLY PRINTABLE VALUE THAT CAN NOT BE STORED IN A NEW VARIABLE.
+                    // BUT WHEN WE RETURN ANY VALUE USING 'return' KEYWORD. IT CAN BE STORED IN A NEW VARIABLE.
+
+                    ANOTHER WAY OF RETURNING ANSWER OR RESULT
+                    function addTwoNumbers(number1 + number2){
+                        return number1 + number2;
+                    }
+
+                    WHENEVER WE RETURN A VALUE FROM A FUNCTION IT HAS TO BE STORED IN A VARIABLE BEFORE EXECUTING IT.
+                    THEN WE CAN CONSOLE LOG THAT PARTICULAR VARIABLE HOLDING RETURNED VALUE FROM FUNCTION.
+
+            -> INSTANCE 4
+
+                    function loginUserMessage(username){
+                        return `${username} Just Logged In`; // STRING INTERPOLATION WITHIN A FUNCTION
+                    }
+
+                    const notification1 = loginUserMessage("Ashish");
+                    const notification2 = loginUserMessage("");
+                    const notification3 = loginUserMessage();
+
+                    console.log(notification1); // OUTPUT : Ashish Just Logged In
+                    console.log(notification2); // OUTPUT :  Just Logged In || SPACE PRINTED BEFORE 'Just Logged In
+                    console.log(notification3); // OUTPUT : undefined Just Logged In || IF NOTHING PASSED IN ARGUMENT THEN IT WILL RETURN undefined.
+
+
+                    ==> USING IF ELSE STATEMENTS WITH FUNCTIONS
+
+                    function loginUserMessage1(username = "User"){ // WE CAN GIVE DEFAULT VALUE IF NOTHING IS PASSED BY THE USER
+                        if(username === undefined){   // CAN ALSO WRITE if(!username){......}, ITS SAME AS WHAT WE DID IN THIS LINE.
+                            console.log("please enter a username.");
+                            return; //
+                        }
+                        return `${username} Just Logged In`;
+                    }
+
+                    console.log(loginUserMessage1("Ashish")); // OUTPUT :
+                    }
 
 
 
