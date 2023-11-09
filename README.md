@@ -901,7 +901,7 @@ VIDEO 19 - FUNCTIONS
                         return `${username} Just Logged In`;
                     }
 
-                    console.log(loginUserMessage1("Ashish")); // OUTPUT :
+                    console.log(loginUserMessage1("Ashish")); // OUTPUT : Ashish Just Logged In
                     }
 
 
