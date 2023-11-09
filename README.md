@@ -906,8 +906,54 @@ VIDEO 19 - FUNCTIONS
 
 VIDEO 20 - MORE ABOUT FUNCTION
 
-            ->
+            -> INSTANCE 1
 
+                    function calculateCartPrice(...num1){
+                        return num1;
+                    }
+                    // WHATEVER STARTS WITH 3 DOTS {...} IT IS CALLED REST OPERATOR AND SPREAD OPERATOR. IT JUST DIFFERS FROM USE CASE TO USE CASE. HERE IT IS A REST OPERATOR IN THIS CASE.
+
+                    console.log(calculateCartPrice(200, 300, 400, 500, 2000));
+                    // [200, 300, 400, 500, 2000]
+                    {THIS IS RETURNING AN ARRAY OF ALL THE ARGUMENTS PASSED.}
+
+            -> INSTANCE 2
+
+                    function calculateCartPrice1(val1, val2, ...num1){
+                        return num1;
+                    }
+                    calculateCartPrice(200, 400, 500, 2000)
+                    // WHATEVER STARTS WITH 3 DOTS {...} IT IS CALLED REST OPERATOR AND SPREAD OPERATOR. IT JUST DIFFERS FROM USE CASE TO USE CASE. HERE IT IS A REST OPERATOR IN THIS CASE.
+
+                    console.log(calculateCartPrice1(200, 300, 400, 500, 2000));
+                    // [400, 500, 2000]
+                    {THIS IS RETURNING AN ARRAY OF REST OF THE ARGUMENTS PASSED AFTER val1 and val2.}
+
+            -> (USING OBJECTS IN FUNCTIONS)
+
+                    --> INSTANCE 1
+                            // DECLARING AN OBJECT
+                            const user = {
+                                username : "Parakh",
+                                age : 24
+                            }
+
+                            // MAKING A FUNCTION TO HANDLE OBJECT AND PASSING ABOVE OBJECT AS AN ARGUMENT
+                            function handleObject(anyobject){
+                                console.log(`username is ${anyobject.username} and age is ${anyobject.age}`); // USING STRING INTERPOLATION
+                            }
+
+                            handleObject(user); // OUTPUT : username is Parakh and age is 24
+
+                            // WE CAN ALSO PASS AN OBJECT WHILE CALLING A FUNCTION
+
+                            handleObject({
+                                username : "Ashish",
+                                age : 25
+                            }) // OUTPUT : username is Ashish and age is 25
+
+
+                    -->
 
 
 NOTE : () => Paranthesis.
