@@ -828,7 +828,7 @@ VIDEO 19 - FUNCTIONS
                         console.log("H");
                     }
 
-                    sayMyName -> Reference || THIS IS A REFERENCE TO THAT FUNCTION
+                    sayMyName -> Reference || THIS IS A REFERENCE TO THAT FUNCTION || THIS IS GOING TO BE USED IN DOM MANIPULATION AND REACT.
                     sayMyName() -> Execution || THIS WILL EXECUTE THE FUNCTION AND CODE INSIDE THAT FUNCTION
                     sayMyName(); // OUTPUT : A
                                              S
