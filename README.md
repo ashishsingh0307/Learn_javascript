@@ -952,8 +952,23 @@ VIDEO 20 - MORE ABOUT FUNCTION
                                 age : 25
                             }) // OUTPUT : username is Ashish and age is 25
 
+                    --> INSTANCE 2
 
-                    -->
+                            // DECLARING NEW ARRAY
+                            const myNewArray = [200, 400, 100, 150];
+
+                            // HANDLING ARRAY USING FUNCTIONS
+                            function returnSecondValue(getarray){
+                                return getarray[1];
+                            }
+
+                            console.log(returnSecondValue(myNewArray));
+
+                            // WE CAN DO THE SAME THING WHAT WE DID WITH OBJECTS IN ABOVE INSTANCE
+
+VIDEO 21 - INTRODUCTION TO SCOPE
+
+            ->
 
 
 NOTE : () => Paranthesis.
