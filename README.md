@@ -1008,12 +1008,38 @@ VIDEO 22 - MORE ON SCOPES
                             console.log(username);
                         }
                         console.log(website);
-                        // undefined
+                        // OUTPUT : error
                         {FUNCTION 'one' IS A PARENT FUNCTION AND FUNCTION 'two' IS A CHILD FUNCTION. SO A PARENT FUNCTION CAN NOT ACCESS}
                         {CHILD'S ELEMENTS BUT A CHILD CAN USE ITS PARENTS ELEMENTS.}
                         two();
                     }
                     one(); // OUTPUT : ashish
+
+            -> INSTANCE 2
+
+                    if(true){
+                        const username = "ajay";
+
+                        if(username === "ajay"){
+                            const website = " youtube";
+                            console.log(username + website);
+                        }
+
+                        console.log(website); // OUTPUT : error || CAN NOT ACCESS AS ITS IN THE BLOCK SCOPE WHERE USERNAME IS CHECKED
+                    }
+                    console.log(username); // OUTPUT : error || CAN NOT ACCESS AS ITS IN THE BLOCK SCOPE OF THE IF ELSE STATEMENT ABOVE
+
+                    //HOISTING
+                    console.log(addone(5));
+                    function addone(num){ // FUNCTION DECLARATION NORMAL WAY || WHEN DECLARED THIS WAY HOISTING IS SUPPORTED
+                        return num + 1;
+                    }
+
+
+                    console.log(addtwo(3));
+                    const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES || WHEN DECLARED THIS WAY HOISTING IS NOT SUPPORTED BECAUSE WE CAN ONLY USE VAR KEYWORD FOR HOISTING. CONST AND LET DOES NOT SUPPORT HOISTING.
+                        return num + 2;
+                    }
 
 NOTE : () => Paranthesis.
        [] => Brackets.
