@@ -1082,10 +1082,4 @@ NOTE : () => Paranthesis.
 
 
 
-
-
-
-
-
-
-video 22 : 00:00
+video 23 : 05:17
