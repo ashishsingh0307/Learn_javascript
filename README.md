@@ -1029,26 +1029,49 @@ VIDEO 22 - MORE ON SCOPES
                     }
                     console.log(username); // OUTPUT : error || CAN NOT ACCESS AS ITS IN THE BLOCK SCOPE OF THE IF ELSE STATEMENT ABOVE
 
-            --> HOISTING
+                --> HOISTING
 
-                --> console.log(addone(5));
-                    function addone(num){ // FUNCTION DECLARATION NORMAL WAY || WHEN DECLARED THIS WAY HOISTING IS SUPPORTED
-                        return num + 1;
-                    }
-                    // ABOVE DECLARED FUNCTION IS NORMAL FUNCTION
+                    --> console.log(addone(5));
+                        function addone(num){ // FUNCTION DECLARATION NORMAL WAY || WHEN DECLARED THIS WAY HOISTING IS SUPPORTED
+                            return num + 1;
+                        }
+                        // ABOVE DECLARED FUNCTION IS NORMAL FUNCTION
 
-                --> console.log(addtwo(3));
-                    const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES || WHEN DECLARED THIS WAY HOISTING IS NOT SUPPORTED BECAUSE WE CAN ONLY USE VAR KEYWORD FOR HOISTING. CONST AND LET DOES NOT SUPPORT HOISTING.
-                        return num + 2;
-                    }
-                    // ABOVE DECLARED FUNCTION IS ALSO CALLED EXPRESSION.
+                    --> console.log(addtwo(3));
+                        const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES || WHEN DECLARED THIS WAY HOISTING IS NOT SUPPORTED BECAUSE WE CAN ONLY USE VAR KEYWORD FOR HOISTING. CONST AND LET DOES NOT SUPPORT HOISTING.
+                            return num + 2;
+                        }
+                        // ABOVE DECLARED FUNCTION IS ALSO CALLED EXPRESSION.
 
-                    ==> WHEN DECLARED LIKE EXPRESSION THAT FUNCTION CAN NOT BE CALLED BEFORE DECLARATION OF A VARIABLE.
-                        WHEN DECLARED NORMALLY A FUNCTION CAN BE CALLED BEFORE THE DECLARATION OF THE FUNCTION.
+                        ==> WHEN DECLARED LIKE EXPRESSION THAT FUNCTION CAN NOT BE CALLED BEFORE DECLARATION OF A VARIABLE.
+                            WHEN DECLARED NORMALLY A FUNCTION CAN BE CALLED BEFORE THE DECLARATION OF THE FUNCTION.
 
 VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
 
-            ->
+            -> THIS KEYWORD => THIS KEYWORD TELLS US ABOUT THE CURRENT CONTEXT.
+
+                --> INSTANCE 1
+
+                        # CREATING AN OBJECT
+
+                        const user = {
+                            username : "Ashish",
+                            Fees : 999,
+
+                            welcomeMsg : function(){
+                                console.log(`${this.username}, Welcome to Website`);
+                                console.log(this); // THIS SHOWS US THE OBJECTS INSIDE THE USER
+                            }
+                        }
+
+                        user.welcomeMsg(); // OUTPUT : Ashish, Welcome to Website
+                        user.username = "Sam";
+                        user.welcomeMsg(); // OUTPUT : Sam, Welcome to Website
+
+                        // WHAT HAPPENS IS WHEN WE SAY THIS IT TAKES THE CURRENT CONTEXT OF THE SCOPE
+                        // AND WHEN WE SAY 'this.username' WE REFER TO THE USERNAME WHICH IF DEFINED IN THE OBJECT.
+                        // BUT WHEN WE CHNAGE THE VALUE OF USERNAME THE OUTUPT WILL BE CHNAGED ACCORDING TO THE VALUE THAT IS THERE IN THE CURRENT TIME.
+                        // WE DID NOT HARD CODE THE MESSAGE TO TAKE A SINGLE NAME.
 
 NOTE : () => Paranthesis.
        [] => Brackets.
