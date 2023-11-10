@@ -1035,11 +1035,16 @@ VIDEO 22 - MORE ON SCOPES
                     function addone(num){ // FUNCTION DECLARATION NORMAL WAY || WHEN DECLARED THIS WAY HOISTING IS SUPPORTED
                         return num + 1;
                     }
+                    // ABOVE DECLARED FUNCTION IS NORMAL FUNCTION
 
                 --> console.log(addtwo(3));
                     const addtwo = function(num){ // FUNCTION DECLARATION USING VARIABLES || WHEN DECLARED THIS WAY HOISTING IS NOT SUPPORTED BECAUSE WE CAN ONLY USE VAR KEYWORD FOR HOISTING. CONST AND LET DOES NOT SUPPORT HOISTING.
                         return num + 2;
                     }
+                    // ABOVE DECLARED FUNCTION IS ALSO CALLED EXPRESSION.
+
+                    ==> WHEN DECLARED LIKE EXPRESSION THAT FUNCTION CAN NOT BE CALLED BEFORE DECLARATION OF A VARIABLE.
+                        WHEN DECLARED NORMALLY A FUNCTION CAN BE CALLED BEFORE THE DECLARATION OF THE FUNCTION.
 
 NOTE : () => Paranthesis.
        [] => Brackets.
