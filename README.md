@@ -1103,6 +1103,26 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
                                     console.log(this.username); // STILL UNDEFINED
                                     console.log(this); // OUTPUT : {}
                                 }
+                --> TYPES OF ARROW FUNCTIONS
+                        ==> BASIC/NORMAL/EXPLICIT ARROW FUNCTION
+
+                            ===> BASIC ARROW FUNCTION
+                                Instance 1 :
+                                    const addTwo = (num1, num2) => {
+                                        return num1 + num2;
+                                    }
+
+                            ===> IMPLICIT RETURN ARROW FUNCTION
+                                Instance 1 :
+                                    const addTwo = (num1, num2) => num1 + num2; // THIS RETURN THE VALUE WITHOUT ANY RETURN KEYWORD IN IT. IT IS A SINGLE LINE ARROW FUNCTION.
+
+                        // const addTwo = (num1, num2) => (num1 + num2);// WHILE IN A FUNCTION WITH CURLY BRACKETS WE HAVE TO USE RETURN KEYWORD TO RETURN ANY VALUE. || BUT WE DONT HAVE TO USE RETURN KEYWORD IN ROUND PARANTHESIS
+
+                        // IF WE HAVE TO RETURN AN OBJECT IN A IMPLICIT FUNCTION. WE CAN DO SOMETHING LIKE THIS
+                        // const addTwo = (num1, num2) => {username: "Ashish"} // IT WILL RETURN THE UNDEFINED KEYWORD BECAUSE IN IMPLICIT ARROW FUNCTION WE CAN NOT RETURN ANYTHING WITHOUT ROUND BRACKETS.
+
+                        // const addTwo = (num1, num2) => ({username: "Ashish", sum: num1 + num2});
+                        // console.log(addTwo(4,6));
 
 NOTE : () => Paranthesis.
        [] => Brackets.
