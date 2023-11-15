@@ -1079,10 +1079,30 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
                             function chai(){
                                 let username = "Ashish";
                                 console.log(this.username); // THIS KEYWORD ONLY WORKS IN THE OBJECT NOT IN THE FUNCTION.
+                                console.log(this); // IT GIVES US THE GLOBAL OBJECT FROM NODE ENVIRONMENT.
                             }
                             chai(); // OUTPUT : undefined
 
             -> ARROW FUNCTION =>
+
+                --> DECLARATION OF ARROW FUNCTION
+                        ---> LET'S DERIVE ARROW FUNCTION FROM NORMAL FUNCTION
+
+                                PHASE 1 : THIS IS NORMAL FUNCTION
+
+                                const chai = function(){
+                                    let username = "Ashish";
+                                    console.log(this.username); // STILL GIVING UNDEFINED.
+                                    console.log(this); // GIVING OBJECT OF THE NODE ENVIRONMENT.
+                                }
+
+                                PHASE 2 : THIS IS ARROW FUNCTION (REMOVING FUNCTION KEYWORD AND ADDING ARROW BEFORE THE BRACES)
+
+                                const chai = () => {
+                                    let username = "Ashish";
+                                    console.log(this.username); // STILL UNDEFINED
+                                    console.log(this); // OUTPUT : {}
+                                }
 
 NOTE : () => Paranthesis.
        [] => Brackets.
