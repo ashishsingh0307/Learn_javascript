@@ -1073,6 +1073,17 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
                         // BUT WHEN WE CHNAGE THE VALUE OF USERNAME THE OUTUPT WILL BE CHNAGED ACCORDING TO THE VALUE THAT IS THERE IN THE CURRENT TIME.
                         // WE DID NOT HARD CODE THE MESSAGE TO TAKE A SINGLE NAME.
 
+                    Note : THIS KEYWORD ONLY WORKS IN OBJECTS ONLY NOT IN FUCNTION
+
+                        instance :
+                            function chai(){
+                                let username = "Ashish";
+                                console.log(this.username); // THIS KEYWORD ONLY WORKS IN THE OBJECT NOT IN THE FUNCTION.
+                            }
+                            chai(); // OUTPUT : undefined
+
+            -> ARROW FUNCTION =>
+
 NOTE : () => Paranthesis.
        [] => Brackets.
        {} => Braces.
