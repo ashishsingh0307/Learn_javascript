@@ -1128,6 +1128,19 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
                                 console.log(addTwo(4,6));
 
                             ===> EXPLICIT RETURN ARROW FUNCTION - IT IS JUST A FUNCTION WHICH HAS RETURN KEYWORD TO RETURN A VALUE FROM THE FUNCTION
+
+VIDEO 24 - IIFE (IMMEDIATLY INVOKED FUNCTION EXECUTION)
+
+            -> MANY TIMES GLOBAL SCOPE POLLUTION HAPPENS THEN WE USE IIFE SO THAT WE CAN REMOVE THAT GLOBAL SCOPE POLLUTION.
+
+                --> SYNTAX OF IIFE
+                        =>  (function chai(){ // NAMED IIFE
+                                console.log("DB Connected ONE");
+                            }) ();
+
+
+
+
 NOTE : () => Paranthesis.
        [] => Brackets.
        {} => Braces.
