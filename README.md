@@ -1127,6 +1127,7 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
                                 const addTwo = (num1, num2) => ({username: "Ashish", sum: num1 + num2});
                                 console.log(addTwo(4,6));
 
+                            ===> EXPLICIT RETURN ARROW FUNCTION - IT IS JUST A FUNCTION WHICH HAS RETURN KEYWORD TO RETURN A VALUE FROM THE FUNCTION
 NOTE : () => Paranthesis.
        [] => Brackets.
        {} => Braces.
