@@ -1138,7 +1138,20 @@ VIDEO 24 - IIFE (IMMEDIATLY INVOKED FUNCTION EXECUTION)
                                 console.log("DB Connected ONE");
                             }) ();
 
+                            // ABOVE IS THE NAMED IIFE
 
+                        => IF WE WRITE 2 IIFE FUNCTION ONE AFTER ANOTHER THEN WE HAVE TO END FIRST IIFE FUNCTION OR BOTH IN ORDER IT TO RUN.
+                           BECAUSE FUNCTION WOULD NOT KNOW WHERE TO END THE CURRENT CONTEXT.
+
+                            ==> NORMAL IIFE
+                                (() => {
+                                    console.log("DB CONNECTED THREE");
+                                }) ();
+
+                            ==> NORMAL IIFE WITH ARGUMENTS AND PARAMETERS
+                                ((name) => {
+                                    console.log(`DB CONNECTED BY ${name}`);
+                                }) ("ASHISH");
 
 
 NOTE : () => Paranthesis.
