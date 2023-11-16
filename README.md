@@ -704,7 +704,7 @@ VIDEO 17 - MORE ON OBJECTS =====================================================
                  FIRST OBJECT IN ASSIGN FUNCTION IS ALWAYS A TARGET AND REST ARE SOURCE,
                  SO IF WE GIVE EMPTY OBJECT FIRST THEN IT WILL BECOME TARGET AND REST BECOMES SOURCE, THAT WILL BE MERGED IN TAREGT OBJECT}
 
-VIDEO 18 - DESTRUCTURING OF OBJECTS
+VIDEO 18 - DESTRUCTURING OF OBJECTS ===============================================================================================================
 
             Note : DESTRUCTURING CAN BE DONE FOR BOTH ARRAYS AND OBJECTS
             -> INSTANCE 1
@@ -813,7 +813,7 @@ VIDEO 18 - DESTRUCTURING OF OBJECTS
 
                     ABOVE IS THE RAW SAMPLE DATA FROM RANDOM USER GENRATOR WEBSITE
 
-VIDEO 19 - FUNCTIONS
+VIDEO 19 - FUNCTIONS ==================================================================================================================================
 
             FUNCTION IS A PACKAGE WHICH HOLDS SOME CODE IN IT. (NAMING CONVENTION / NOMANCLATURE)
 
@@ -904,7 +904,7 @@ VIDEO 19 - FUNCTIONS
                     console.log(loginUserMessage1("Ashish")); // OUTPUT : Ashish Just Logged In
                     }
 
-VIDEO 20 - MORE ABOUT FUNCTION
+VIDEO 20 - MORE ABOUT FUNCTION ======================================================================================================================
 
             -> INSTANCE 1
 
@@ -966,7 +966,7 @@ VIDEO 20 - MORE ABOUT FUNCTION
 
                             // WE CAN DO THE SAME THING WHAT WE DID WITH OBJECTS IN ABOVE INSTANCE
 
-VIDEO 21 - INTRODUCTION TO SCOPE
+VIDEO 21 - INTRODUCTION TO SCOPE ===================================================================================================================
 
             -> SCOPE IS A PART OF CODE WHICH IS WRITTEN BETWEEN BRACES ('{}').
             -> BEFORE ES6 THERE WAS ONLY ONE VARIBALE KEYWORD TO DECLARE KEYWORD AND THAT WAS 'var'.
@@ -997,7 +997,7 @@ VIDEO 21 - INTRODUCTION TO SCOPE
                 ==> BLOCK SCOPE MEANS WHATEVER IS DEFINED INSIDE THE BRACES
                 ==> GLOBAL SCOPE MEANS WHATEVER IS DEFINED OUTSIDE THE BRACES
 
-VIDEO 22 - MORE ON SCOPES
+VIDEO 22 - MORE ON SCOPES ===========================================================================================================================
 
             -> INSTANCE 1
 
@@ -1046,7 +1046,7 @@ VIDEO 22 - MORE ON SCOPES
                         ==> WHEN DECLARED LIKE EXPRESSION THAT FUNCTION CAN NOT BE CALLED BEFORE DECLARATION OF A VARIABLE.
                             WHEN DECLARED NORMALLY A FUNCTION CAN BE CALLED BEFORE THE DECLARATION OF THE FUNCTION.
 
-VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
+VIDEO 23 - INTRODUCTION TO ARROW FUNCTION ============================================================================================================
 
             -> THIS KEYWORD => THIS KEYWORD TELLS US ABOUT THE CURRENT CONTEXT.
 
@@ -1129,7 +1129,7 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
 
                             ===> EXPLICIT RETURN ARROW FUNCTION - IT IS JUST A FUNCTION WHICH HAS RETURN KEYWORD TO RETURN A VALUE FROM THE FUNCTION
 
-VIDEO 24 - IIFE (IMMEDIATLY INVOKED FUNCTION EXECUTION)
+VIDEO 24 - IIFE (IMMEDIATLY INVOKED FUNCTION EXECUTION) ===============================================================================================
 
             -> MANY TIMES GLOBAL SCOPE POLLUTION HAPPENS THEN WE USE IIFE SO THAT WE CAN REMOVE THAT GLOBAL SCOPE POLLUTION.
 
@@ -1153,6 +1153,7 @@ VIDEO 24 - IIFE (IMMEDIATLY INVOKED FUNCTION EXECUTION)
                                     console.log(`DB CONNECTED BY ${name}`);
                                 }) ("ASHISH");
 
+VIDEO 25 - JAVASCRIPT CODE EXECUTION AND CALL STACK
 
 NOTE : () => Paranthesis.
        [] => Brackets.
