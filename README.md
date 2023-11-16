@@ -1123,8 +1123,9 @@ VIDEO 23 - INTRODUCTION TO ARROW FUNCTION
                                 // IF WE HAVE TO RETURN AN OBJECT IN A IMPLICIT FUNCTION. WE CAN DO SOMETHING LIKE THIS
                                 const addTwo = (num1, num2) => {username: "Ashish"} // IT WILL RETURN THE UNDEFINED KEYWORD BECAUSE IN IMPLICIT ARROW FUNCTION WE CAN NOT RETURN ANYTHING WITHOUT ROUND BRACKETS.
 
-                        // const addTwo = (num1, num2) => ({username: "Ashish", sum: num1 + num2});
-                        // console.log(addTwo(4,6));
+                                Instance 4 :
+                                const addTwo = (num1, num2) => ({username: "Ashish", sum: num1 + num2});
+                                console.log(addTwo(4,6));
 
 NOTE : () => Paranthesis.
        [] => Brackets.
