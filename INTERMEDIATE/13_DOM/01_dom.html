@@ -15,6 +15,9 @@
 
     <div>
         <h1 id="title" class="heading">DOM Learning on Chai or Code <span style="display: none;">test text</span> </h1>
+        <h2>Lorem ipsum dolor sit. 1</h2>
+        <h2>Lorem ipsum dolor sit. 2</h2>
+        <h2>Lorem ipsum dolor sit. 3</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, voluptatem!</p>
     </div>
 
@@ -70,6 +73,34 @@
 
         //title.style.padding = '15px';
         //OUTPUT : '15px' + Padding will be added of 15px of that element
+
+        //title.innerText;
+        //OUTPUT : 'DOM Learning on Chai or Code'
+
+        //title.textContent;
+        //OUTPUT : 'DOM Learning on Chai or Code test text '
+
+        // -> DIFFERENCE BETWEEN INNERTEXT AND TEXTCONTENT IS THAT INNER TEXT GIVES BACK THE VALUE OF THE VISIBLE TEXT CONTENT
+        // -> LIKE IN ABOVE EXAMPLE WE HAVE A SPAN THAT HAS A DISPLAY NONE AS A STYLE AND IT IS NOT VISIBLE ON THE PAGE, SO INNERTEXT IS NOT SHOWING THAT SPAN'S TAG BUT TEXTCONTENT IS SHOWING THE WHOLE TEXT STRING THAT IS AVAILABLE IN THE ELEMENT.
+
+        //title.innerHTML;
+        //OUTPUT : 'DOM Learning on Chai or Code <span style="display: none;">test text</span>'
+
+        // INNERHTML GIVES US THE CONTENT AND ELEMENTS TOO THAT ARE PRESENT IN THAT ELEMENT.
+
+        // document.querySelector('h2');
+        // <h2>​Lorem ipsum dolor sit. 1​</h2>​
+        // document.querySelector('#title');
+        // <h1 id=​"title" class=​"heading">​…​</h1>​
+        // document.querySelector('.heading');
+        // <h1 id=​"title" class=​"heading">​…​</h1>​
+        // document.querySelectorAll('h2');
+        // NodeList(3) [h2, h2, h2]
+        // 0 : h2
+        // 1 : h2
+        // 2 : h2
+        // length : 3
+        // [[Prototype]] : NodeList
 
     </script>
 
