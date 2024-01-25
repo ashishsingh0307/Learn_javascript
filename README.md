@@ -67,8 +67,8 @@ VIDEO 5 - INTRO TO DATATYPES ===================================================
                 ==> NUMBERS
                 ==> BIGINT
                 ==> BOOLEAN
-                ==> NULL standalone value || type is object
-                ==> UNDEFINED type is undefined
+                ==> NULL - standalone value || type is object
+                ==> UNDEFINED - type is undefined
                 ==> SYMBOL
 
             NON PRIMITIVE DATATYPES
@@ -77,6 +77,7 @@ VIDEO 5 - INTRO TO DATATYPES ===================================================
                 ==> ARRAY
 
           -> 'typeof' is a keyword which is used to check the type of the value whether it is string, number, boolean etc.
+          -> 'NULL' is an object
 
 VIDEO 6 - DATATYPES CONVERSION AND OPERATIONS ===========================================================================================
 
