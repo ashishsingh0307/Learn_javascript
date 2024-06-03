@@ -2,13 +2,19 @@ VIDEO 1 - INTRODUCTION TO WHAT THE COURSE IS ABOUT =============================
 
 VIDEO 2 - HOW TO SETUP THE ENVIRONMENT,
           DIFFERENCE BETWEEN COMPILER AND INTERPRETER,
+            {
+                COMPILER -
+                INTERPRETER -
+            }
           HISTORY OF JS(earlier written in browser and now written in the ide),
-          NODE JS IS USED TO RUN JS FILES,
+          NODE JS IS USED TO RUN JS FILES, (MORE EXECUTION ENGINES WERE NODEJS, DENO, etc.)
           INSTALLATION OF NODE JS {using LTS(Long Term Support) version},
           USING IDE (Visual Studio Code) (Jetbranins Fleet also good editor),
           EXECUTION OF JS CODE => "node filename.js".
+          TREE PARSER IN THE CODE EDITORS HAVE SOME PREDEFINED KEYWORDS.
 
 VIDEO 3 - INTRO TO GIT AND GITHUB ======================================================================================================
+
           CREATING OF GITHUB PROFILE
             -> CREATING NEW REPOSITORY
             -> CREATING CODESPACE FOR THAT REPOSITORY
@@ -26,11 +32,12 @@ VIDEO 3 - INTRO TO GIT AND GITHUB ==============================================
             -> DELETE THE CODESPACE AFTER FINISHING WORK ON IT (because we get only limited Hours from github codespaces).
 
 VIDEO 4 - INTRO TO VARIABLES ===========================================================================================================
+
             -> VAR - var accountId || var is a keyword
                 --> In Scope if we declare variable using 'var' keyword.
                     It can be used outside the scope also.
                     Which is not a correct thing to do.
-                    so to tackle this problem 'let' is introduced in ES6
+                    so to tackle this problem 'let' & 'const' is introduced in ES6
 
             -> LET - let accountId || let is a keyword
                 --> In scope now if we declare any variable using the 'let' keyword then it will not be used oustside the scope.
@@ -43,6 +50,7 @@ VIDEO 4 - INTRO TO VARIABLES ===================================================
           INTRO TO COMMENTS
             1.) PUT IN FRONT OF A LINE OR STARTING OF A LINE THEN THAT LINE WILL BE COMMENTED OUT
             2.) /* _ _ _ */ THIS IS A MULTILINE COMMENT WHICH CAN CONTAINER MULTIPLE LINES
+
 
           INTRO TO console.table()
             -> Syntax : console.table([variableName1, variableName2, variableName3, ...]) => This provides printed values in a Tabular Form
@@ -1200,6 +1208,35 @@ NOTE : () => Paranthesis.
 
 
 
+DOM MANIPULATION ===========================================================================================================================================
+
+WHEN A DOM IS CREATED IT IS CREATED IN A TREE LIKE STRUCTURE
+{EVERYTHING MENTIONED BELOW IS A NODE.}
+
+FIRST ELEMENT OF DOM TREE IS ALWAYS WINDOWS.
+UNDER WINDOW ELEMENT THERE IS DOCUMENT.
+UNDER DOCUMENT WE GET HTML
+HTML IS MADE OF 2 CHILDS - 1.) HEAD 2.) BODY
+HEAD ELEMENT WILL HAVE SOME META TAGS, TITLE TAG AND LINKS TAGS
+IN EVERY ELEMENT WE GET A TEXT NODE. (WHICHEVER NODE HAS SOME TEXT).
+IN EVERY ELEMENT WE CAN HAVE SOME ATTRIBUTES TOO.
+
+BODY NODE WILL HAVE SOME DIV'S, H1, P, IMG, FORM, ANCHOR. THESE ALL CAN HAVE SOME ATTRIBUTES AND TEXT NODE.
+
+WHEN WE CONSOLE LOG DOCUMENT WE GET ALL THE NODES, TEXT NODES, ATTRIBUTES.
+BUT IF WE CONSOLE LOG DOCUMENT.LINKS IT WILL GIVE US ALL THE LINKS BUT THE HTML COLLECTION FORMAT. (IT IS NOT AN ARRAY)
+
+ARRAY AND HTML COLLECTION ARE 2 DIFFERENT THINGS.
+HTML COLLECTION CAN BE CONVERTED IN ARRAY. HTML COLLECTION DOESNOT HAVE PROPETIES LIKE AARAYS.
+
+WE CAN USE DOCUMENT TI SELECT ANY ELEMENT ON THE PAGE
+FOR EXAMPLE : document.getElementById('firstHeading'); {FIRST HEADING IS AN ID IN THIS EXAMPLE}
+
+WE CAN MANIPULATE THESE ELEMENTS USING SOME PROPERTIES
+{CONTINUING ABOVE EXAMPLE}
+FOR EXAMPLE : document.getElementById('firstHeading').innerHTML = "<h1>Chai aur Code</h1>";
+
 
 
 video 26 : 00:00
+
