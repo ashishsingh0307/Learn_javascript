@@ -144,9 +144,9 @@ VIDEO 7 - DATATYPES CONVERSION AND OPERATIONS ==================================
                 POSTFIX - IT CHANGES OR INCREMENT THE VALUE AFTER THE OPERATION AND GIVE THE UNCHANGED VALUE
 
 
-VIDEO 8 - COMPARISION IN DATATYPES ======================================================================================================
+VIDEO 8 - COMPARISON IN DATATYPES ======================================================================================================
 
-          -> COMPARISIONS OPERATORS
+          -> COMPARISONS OPERATORS
                 --> LESS THAN (<)
                 --> LESS THAN EQUAL (<=)
                 --> GREATER THAN (>)
@@ -199,13 +199,13 @@ VIDEO 10 - STACK AND HEAP MEMORY ===============================================
               1.) STACK (PRIMITIVE)
 
                     Stack is used for primitive datatypes which stacks values over values or variables over variable. In stack when we assign variable_1 value to other variable_2. for instance:-
-                    1) first we take variable_1 and value and then we take variable_2 which is equal to variable_1 then we are not changing the value of variable one even if we change value of variable_2.
+                    1) first we take variable_1 and value and then we take variable_2 which is equal to variable_1 then we are not changing the value of variable_1 even if we change value of variable_2.
 
                     ln1 : variable_1 = 15
                     ln2 : variable_2 = variable_1
                     ln3 : variable_2 = 20
 
-                    in stack memory above variable_2 is not going to change the value of variable_1 as on ln2 variable_2 is just copying the value of variable_1. so that is the reason that is why the variable_1 value will not be changed.
+                    in stack memory above, variable_2 is not going to change the value of variable_1 as on ln2 variable_2 is just copying the value of variable_1. so that is the reason that is why the variable_1 value will not be changed.
 
 
               2.) HEAP (NON-PRIMITIVE)
@@ -308,7 +308,7 @@ VIDEO 12 - NUMBERS AND MATHS ===================================================
                     --> USAGE :
                             balance.toFixed(number); if number = 2 || OUTPUT : 100.00
 
-                3) TOPRECISION (METHOD) ==> THIS METHOD ACCEPTS VALUE FROM 1 TO 21.
+                3) TOPRECISION (METHOD) ==> THIS METHOD ACCEPTS VALUE FROM 1 TO 21. RETURNS A STRING
                     --> USAGE :
                             balance.toPrecision(number from 1 to 21); if balance is 123.8966 && if number = 3 || OUTPUT : 124
                             balance.toPrecision(number from 1 to 21); if balance is 123.8966 && if number = 4 || OUTPUT : 123.9
@@ -367,6 +367,7 @@ VIDEO 13 - DATE AND TIME =======================================================
             -> TO DECLARE DATE WE DO THE FOLLOWING
 
                 --> let myDate = new Date();
+                    console.log(typeof myDate); OUTPUT : object
                     console.log(myDate); OUTPUT : 2023-03-01T12:03:00:900Z {THIS IS NOT AT ALL READABLE}
                     => IF WE CONVERT THIS DATE IN STRING THEN WE WILL GET SOMETHING LITTLE READABLE
                     console.log(myDate.toString()); OUTPUT : WED MAR 01 2023 12:03:41 GMT+0000 (Coordinated Universal Time)
@@ -383,6 +384,7 @@ VIDEO 13 - DATE AND TIME =======================================================
                     console.log(myCreatedDate); OUTPUT : 2023-01-23T00:00:00.000Z
                     => IF WE CONVERT THIS INTO STRING WE WILL GET THE FOLLOWING OUTPUT
                     console.log(myCreatedDate.toDateString()); OUTPUT : Mon Jan 23 2023
+                    => Months starts from 0 in Javascript if given in single digit
 
                 --> let myCreatedDate = new Date(2023, 0, 23, 5, 3);
                     console.log(myCreatedDate.toLocaleString()); OUTPUT : 1/23/2023, 5:03:00 AM
@@ -414,7 +416,7 @@ VIDEO 13 - DATE AND TIME =======================================================
                         timeZone : '....'
                     });
 
-                    IN TOLOCALESTRING METHODS WE DEFINE OBJECTS AND MANY PARAMETERS. ABOVE METHOD IS GOING TO WORK SAME A LINE NUMBER 368
+                    IN TOLOCALESTRING METHODS WE DEFINE OBJECTS AND MANY PARAMETERS. ABOVE METHOD IS GOING TO WORK SAME A LINE NUMBER 378
 
 
 VIDEO 14 - ARRAYS =======================================================================================================================
@@ -1204,9 +1206,6 @@ VIDEO 25 - JAVASCRIPT CODE EXECUTION AND CALL STACK ============================
 NOTE : () => Paranthesis.
        [] => Brackets.
        {} => Braces.
-
-
-
 
 DOM MANIPULATION ===========================================================================================================================================
 

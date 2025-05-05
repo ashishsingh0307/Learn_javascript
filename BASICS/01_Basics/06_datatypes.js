@@ -33,7 +33,7 @@ let userEmail; // undefined
 const id = Symbol('123'); // symbol
 const anotherId = Symbol('123'); // symbol
 
-console.log(id === anotherId);
+console.log(id === anotherId); // output : false
 
 const bigNumber = 315446468486484n; // bigint
 
