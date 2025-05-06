@@ -2,7 +2,7 @@
 
 // IF OBJECT IS MADE WITH LITERAL THEN IT WONT BE A SINGLETON OBJECT
 // BUT IF IT IS MADE WITH CONSTRUCTOR THEN IT WILL BE A SINGLETON OBJECT
-// Object.create (CUNSTROCTOR METHOD OF CREATING OBJECTS)
+// Object.create (CONSTRUCTOR METHOD OF CREATING OBJECTS)
 
 //SINGLETON
 
@@ -27,7 +27,7 @@ const jsUser = {
 // console.log(jsUser["email"]);
 // console.log(jsUser["Full Name"]);
 // console.log(jsUser[mySymbol]); // TO ACCESS A SYMBOL WE DO NOT NEED TO MAKE IT A STRING WE CAN DIRECTLY ACCESS THE SYMBOL AS WE DID IT IN OBJECT.
-// console.log(typeof jsUser[mySymbol]);
+// console.log(typeof jsUser[mySymbol]); // string
 
 jsUser.email = "ashish041@gmail.com";
 jsUser["email"] = "singh041@gmail.com";
@@ -40,18 +40,18 @@ jsUser["isLoggedIn"] = true; // THIS IS NOT WORKING BECAUSE OF ABOVE FREEZE FUNC
 // console.log(jsUser);
 
 jsUser.greeting = function(){
-    console.log("Hello JS User");
+    // console.log("Hello JS User");
 }
 
-console.log(jsUser.greeting);
-console.log(jsUser.greeting());
+// console.log(jsUser.greeting);
+// console.log(jsUser.greeting());
 
 jsUser.greetingTwo= function(){
-    console.log(`Hello ${jsUser["name"]}`); // USING BACKTICKS IS CALLED STRING INTERPOLATION.
-    console.log(`Hello ${this["name"]}`);
-    console.log(`Hello ${this["Full Name"]}`);
+    // console.log(`Hello ${jsUser["name"]}`); // USING BACKTICKS IS CALLED STRING INTERPOLATION.
+    // console.log(`Hello ${this["name"]}`);
+    // console.log(`Hello ${this["Full Name"]}`);
     //all above console logs are doing the same thing except for the last one its printing full name value instead
 }
 
-console.log(jsUser.greetingTwo);
-console.log(jsUser.greetingTwo());
+// console.log(jsUser.greetingTwo);
+// console.log(jsUser.greetingTwo());
